@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-04-23T17:56:17.217Z",
-  "total_count": 62,
+  "fetched_at": "2026-04-23T18:14:36Z",
+  "total_count": 60,
   "unread_count": 9,
   "threads": [
     {
@@ -951,7 +951,7 @@
       "id": "19db0c6e58ae3ccd",
       "date": "2026-04-21T16:01:57Z",
       "isUnread": false,
-      "classification": "other",
+      "classification": "phrasing",
       "body": {
         "os_details": {
           "name": "chrome",
@@ -2159,7 +2159,7 @@
       "id": "19daaf412444ca7a",
       "date": "2026-04-20T12:53:35Z",
       "isUnread": false,
-      "classification": "wrong",
+      "classification": "multiple",
       "body": {
         "os_details": {
           "name": "chrome",
@@ -2562,7 +2562,7 @@
       "id": "19da56fca8abc656",
       "date": "2026-04-19T11:10:59Z",
       "isUnread": false,
-      "classification": "multiple",
+      "classification": "phrasing",
       "body": {
         "os_details": {
           "name": "chrome",
@@ -2696,7 +2696,7 @@
       "id": "19da4b85bc96cd8c",
       "date": "2026-04-19T07:50:38Z",
       "isUnread": false,
-      "classification": "explanation",
+      "classification": "other",
       "body": {
         "os_details": {
           "name": "chrome",
@@ -3845,140 +3845,6 @@
           "test_question_id": "9cbd6905-d73d-4429-adc1-af99748fad82",
           "question_id": "069c0b04-9e2d-440e-a833-f2116e46e927",
           "time_modified": "2024-08-14T17:03:18.179Z",
-          "is_restoration": false,
-          "restoration_cycle": null,
-          "attachment": ""
-        }
-      }
-    },
-    {
-      "id": "19d97499330bcc63",
-      "date": "2026-04-16T17:14:34Z",
-      "isUnread": false,
-      "classification": "phrasing",
-      "body": {
-        "os_details": {
-          "name": "chrome",
-          "version": "147.0.0",
-          "os": "Windows 10",
-          "type": "browser"
-        },
-        "issue_text": "למה מתייחס לאורך זמן ? לזמן הפשעת התרופה המיידי ? לתקופת הטיפול ? לא ברור. ",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|699d7c7436a09ba026b91f77",
-          "userId": "auth0|699d7c7436a09ba026b91f77"
-        },
-        "extra_details": {
-          "question_text": "כיצד יש להתאים את מינון פרדניזון (Prednisone) בשחרור מיידי לאורך זמן?",
-          "right_answer": "להפחית בהדרגה את המינון",
-          "false_one": "לשנות את המינון בהתאם למשקל הגוף",
-          "false_two": "לשמר מינון קבוע לאורך זמן",
-          "false_three": "להעלות את המינון באופן שבועי",
-          "category": "פרמקולוגיה",
-          "division": "קורטיקוסטרואידים",
-          "subdivision": "הדרכת המטופל",
-          "level": "יישום",
-          "explanation": "תשובה נכונה\nלהפחית בהדרגה את המינון — זוהי התשובה הנכונה משום ש-Prednisone עלול לגרום לדיכוי ציר ה-HPA ולאי ספיקת קורטיקוסטרואידים במקרה של הפסקה פתאומית. לפיכך, ההנחיה היא להפחית את המינון בהדרגה לאחר טיפול ארוך טווח ולחדש טיפול קורטיקוסטרואידי במידת הצורך. בנוסף, המטופל מונחה במפורש שלא להפסיק את התרופה באופן פתאומי או ללא אישור הרופא המטפל. יתרה מזאת, הפסקה פתאומית עלולה לגרום לתסמיני גמילה הכוללים דלקת חוזרת, עייפות, חולשה, כאבי פרקים, חום, סחרחורת, לתרגיה, דיכאון, התעלפות, תת לחץ דם אורתוסטטי, קוצר נשימה, אנורקסיה והיפוגליקמיה. לכן, שילוב הסיכון לדיכוי ה-HPA, תסמיני הגמילה וההנחיה המפורשת להפחתה הדרגתית תואם במדויק את האסטרטגיה של הפחתה הדרגתית של המינון.\n\nתשובות שגויות\nלשנות את המינון בהתאם למשקל הגוף — שגויה משום שההנחיה להתאמת מינון לאורך זמן מתייחסת להפחתה הדרגתית, ולא לשינויים על בסיס משקל הגוף. ניטור משקל נועד לזיהוי אגירת נוזלים ותופעות קושינגואידיות, ולא להתאמת מינון.\n\nלשמר מינון קבוע לאורך זמן — שגויה משום ששמירה על מינון קבוע לתקופה ממושכת מגדילה את הסיכון לדיכוי ציר ה-HPA ולתופעות לוואי מצטברות. ההנחיה היא להפחית בהדרגה, לא לשמר.\n\nלהעלות את המינון באופן שבועי — שגויה משום שהעלאת מינון שבועית היא היפך ההנחיה הנדרשת. העלאה מתמשכת תגביר את הסיכון לתופעות לוואי חמורות כולל מצב קושינגואידי, אוסטאופורוזיס ודיכוי חיסוני.\n\n\"Drug can cause HPA axis suppression and result in corticosteroid insufficiency if withdrawn. Reduce dosage gradually and reinstitute corticosteroid therapy if needed.\" / \"Tell patient not to stop drug abruptly or without prescriber's consent.\" / \"Gradually reduce dosage after long-term therapy.\"\n(Nursing Drug Handbook 2025-2026, Prednisone monograph, Nursing Considerations / Patient Teaching)",
-          "question_order": [
-            "a",
-            "d",
-            "b",
-            "c"
-          ],
-          "question_selection": "0",
-          "status": "notSubmited",
-          "question_number": 73,
-          "question": {
-            "question_id": "bde6efb2-c586-4256-95bb-f0ed278c44a7",
-            "question_text": "כיצד יש להתאים את מינון פרדניזון (Prednisone) בשחרור מיידי לאורך זמן?",
-            "right_answer": "להפחית בהדרגה את המינון",
-            "false_one": "לשנות את המינון בהתאם למשקל הגוף",
-            "false_two": "לשמר מינון קבוע לאורך זמן",
-            "false_three": "להעלות את המינון באופן שבועי",
-            "category": "פרמקולוגיה",
-            "division": "קורטיקוסטרואידים",
-            "subdivision": "הדרכת המטופל",
-            "level": "יישום",
-            "time_modified": "2024-08-14T17:03:18.377Z",
-            "explanation": "תשובה נכונה\nלהפחית בהדרגה את המינון — זוהי התשובה הנכונה משום ש-Prednisone עלול לגרום לדיכוי ציר ה-HPA ולאי ספיקת קורטיקוסטרואידים במקרה של הפסקה פתאומית. לפיכך, ההנחיה היא להפחית את המינון בהדרגה לאחר טיפול ארוך טווח ולחדש טיפול קורטיקוסטרואידי במידת הצורך. בנוסף, המטופל מונחה במפורש שלא להפסיק את התרופה באופן פתאומי או ללא אישור הרופא המטפל. יתרה מזאת, הפסקה פתאומית עלולה לגרום לתסמיני גמילה הכוללים דלקת חוזרת, עייפות, חולשה, כאבי פרקים, חום, סחרחורת, לתרגיה, דיכאון, התעלפות, תת לחץ דם אורתוסטטי, קוצר נשימה, אנורקסיה והיפוגליקמיה. לכן, שילוב הסיכון לדיכוי ה-HPA, תסמיני הגמילה וההנחיה המפורשת להפחתה הדרגתית תואם במדויק את האסטרטגיה של הפחתה הדרגתית של המינון.\n\nתשובות שגויות\nלשנות את המינון בהתאם למשקל הגוף — שגויה משום שההנחיה להתאמת מינון לאורך זמן מתייחסת להפחתה הדרגתית, ולא לשינויים על בסיס משקל הגוף. ניטור משקל נועד לזיהוי אגירת נוזלים ותופעות קושינגואידיות, ולא להתאמת מינון.\n\nלשמר מינון קבוע לאורך זמן — שגויה משום ששמירה על מינון קבוע לתקופה ממושכת מגדילה את הסיכון לדיכוי ציר ה-HPA ולתופעות לוואי מצטברות. ההנחיה היא להפחית בהדרגה, לא לשמר.\n\nלהעלות את המינון באופן שבועי — שגויה משום שהעלאת מינון שבועית היא היפך ההנחיה הנדרשת. העלאה מתמשכת תגביר את הסיכון לתופעות לוואי חמורות כולל מצב קושינגואידי, אוסטאופורוזיס ודיכוי חיסוני.\n\n\"Drug can cause HPA axis suppression and result in corticosteroid insufficiency if withdrawn. Reduce dosage gradually and reinstitute corticosteroid therapy if needed.\" / \"Tell patient not to stop drug abruptly or without prescriber's consent.\" / \"Gradually reduce dosage after long-term therapy.\"\n(Nursing Drug Handbook 2025-2026, Prednisone monograph, Nursing Considerations / Patient Teaching)",
-            "is_restoration": false,
-            "restoration_cycle": null
-          },
-          "test_id": "9627d541-38e7-49e0-9024-3ec4aae42a95",
-          "user_id": "auth0|699d7c7436a09ba026b91f77",
-          "test_question_id": "0750af8c-9aed-432f-b039-290b74f44380",
-          "question_id": "bde6efb2-c586-4256-95bb-f0ed278c44a7",
-          "time_modified": "2024-08-14T17:03:18.377Z",
-          "is_restoration": false,
-          "restoration_cycle": null,
-          "attachment": ""
-        }
-      }
-    },
-    {
-      "id": "19d9746b0942e434",
-      "date": "2026-04-16T17:11:25Z",
-      "isUnread": false,
-      "classification": "explanation",
-      "body": {
-        "os_details": {
-          "name": "chrome",
-          "version": "147.0.0",
-          "os": "Windows 10",
-          "type": "browser"
-        },
-        "issue_text": "לא  הבנתי מה התשובה הנכונה מההסבר ",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|699d7c7436a09ba026b91f77",
-          "userId": "auth0|699d7c7436a09ba026b91f77"
-        },
-        "extra_details": {
-          "question_text": "מטופל הנמצא בשלב ההחלמה לאחר ניתוח מתמודד עם כאבים עזים, המוחמרים בעת ניסיון להשתתף בפיזיותרפיה. מהי ההתערבות המיטבית שעל האחות לכלול בתוכנית הטיפול במטרה להשיג שליטה יעילה בכאב עבור מטופל זה?",
-          "right_answer": "טיפול שוטף במשככי כאבים עם משככי כאבים נוספים על פי הצורך",
-          "false_one": "שימוש במשאבה לשליטה עצמית בכאב (Patient-Controlled Analgesia) עם מגבלה על מספר הלחיצות",
-          "false_two": "משככי כאבים רק לפני הפיזיותרפיה",
-          "false_three": "מתן משככי כאבים על פי הצורך לאחר הטיפול",
-          "category": "סיעוד המבוגר",
-          "division": "הסביבה הניתוחית",
-          "subdivision": "כאב",
-          "level": "יישום",
-          "explanation": "הטיפול האופטימלי בכאב משמעותי הנובע מניתוח או מפגיעה ברקמות כולל מתן תרופות אנלגטיות במרווחי זמן קבועים. כאבים נוספים הקשורים לפעולות ספציפיות מצריכים תוספת של מנות משככות כאב לפי הצורך. משטר מתן תרופות על בסיס דרישה בלבד אינו מספק בקרה אופטימלית על כאב לאחר ניתוח. אמנם שימוש ב-PCA יכול להוות אסטרטגיה יעילה, אך נדרשת הגדרה של מנות בולוס להשגת הקלה נאותה בכאב, בין אם בשילוב עם מתן רציף ובין אם לא. יש להדגיש את החשיבות של שליטה מתמשכת בכאב, ולא רק בסמוך לפיזיותרפיה.",
-          "question_order": [
-            "b",
-            "a",
-            "d",
-            "c"
-          ],
-          "question_selection": "0",
-          "status": "notSubmited",
-          "question_number": 72,
-          "question": {
-            "question_id": "5c636859-59f1-4c3c-9a77-4adce0574a13",
-            "question_text": "מטופל הנמצא בשלב ההחלמה לאחר ניתוח מתמודד עם כאבים עזים, המוחמרים בעת ניסיון להשתתף בפיזיותרפיה. מהי ההתערבות המיטבית שעל האחות לכלול בתוכנית הטיפול במטרה להשיג שליטה יעילה בכאב עבור מטופל זה?",
-            "right_answer": "טיפול שוטף במשככי כאבים עם משככי כאבים נוספים על פי הצורך",
-            "false_one": "שימוש במשאבה לשליטה עצמית בכאב (Patient-Controlled Analgesia) עם מגבלה על מספר הלחיצות",
-            "false_two": "משככי כאבים רק לפני הפיזיותרפיה",
-            "false_three": "מתן משככי כאבים על פי הצורך לאחר הטיפול",
-            "category": "סיעוד המבוגר",
-            "division": "הסביבה הניתוחית",
-            "subdivision": "כאב",
-            "level": "יישום",
-            "time_modified": "2024-08-14T17:03:18.140Z",
-            "explanation": "הטיפול האופטימלי בכאב משמעותי הנובע מניתוח או מפגיעה ברקמות כולל מתן תרופות אנלגטיות במרווחי זמן קבועים. כאבים נוספים הקשורים לפעולות ספציפיות מצריכים תוספת של מנות משככות כאב לפי הצורך. משטר מתן תרופות על בסיס דרישה בלבד אינו מספק בקרה אופטימלית על כאב לאחר ניתוח. אמנם שימוש ב-PCA יכול להוות אסטרטגיה יעילה, אך נדרשת הגדרה של מנות בולוס להשגת הקלה נאותה בכאב, בין אם בשילוב עם מתן רציף ובין אם לא. יש להדגיש את החשיבות של שליטה מתמשכת בכאב, ולא רק בסמוך לפיזיותרפיה.",
-            "is_restoration": false,
-            "restoration_cycle": null
-          },
-          "test_id": "9627d541-38e7-49e0-9024-3ec4aae42a95",
-          "user_id": "auth0|699d7c7436a09ba026b91f77",
-          "test_question_id": "9153c613-4049-453f-ba81-28f869bdadfb",
-          "question_id": "5c636859-59f1-4c3c-9a77-4adce0574a13",
-          "time_modified": "2024-08-14T17:03:18.140Z",
           "is_restoration": false,
           "restoration_cycle": null,
           "attachment": ""
