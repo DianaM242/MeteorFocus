@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Meteor Focus">
+<meta name="theme-color" content="#5A6FD6">
+<title>תור דיווחים — Meteor Focus</title>
+<style>
+:root {
+  --grad-start: #5A6FD6;
+  --grad-end: #8F73C8;
+  --dark-text: #2D2D3F;
+  --med-text: #4A4A6A;
+  --sub-text: #6B7280;
+  --light-text: #9CA3AF;
+  --border: #E5E7EB;
+  --zebra-white: #FFFFFF;
+  --zebra-alt: #F8F7FC;
+  --header-bg: #EEEDF8;
+  --header-text: #4A4A6A;
+  --green-text: #059669; --green-bg: #ECFDF5;
+  --amber-text: #D97706; --amber-bg: #FFFBEB;
+  --red-text: #DC2626;   --red-bg: #FEF2F2;
+  --grp-teal-bg: #CCFBF1;   --grp-teal-text: #0F766E;
+  --grp-blue-bg: #DBEAFE;   --grp-blue-text: #1E40AF;
+  --grp-indigo-bg: #E0E7FF; --grp-indigo-text: #3730A3;
+  --grp-green-bg: #D1FAE5;  --grp-green-text: #047857;
+  --grp-purple-bg: #EDE9FE; --grp-purple-text: #6D28D9;
+  --grp-red-bg: #FEF2F2;    --grp-red-text: #DC2626;
+  --grp-amber-bg: #FFFBEB;  --grp-amber-text: #D97706;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; direction: rtl; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif; color: var(--dark-text); background: var(--zebra-alt); min-height: 100vh; padding: 16px; font-size: 14px; padding-bottom: env(safe-area-inset-bottom, 16px); }
+h1 { font-size: 26px; font-weight: 700; margin: 0 0 2px; background: linear-gradient(135deg, var(--grad-start), var(--grad-end)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.sub { color: var(--sub-text); font-size: 12.5px; margin-bottom: 14px; }
+.bar { background: var(--zebra-white); border: 1px solid var(--border); border-radius: 14px; padding: 10px 14px; margin-bottom: 10px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.btn { background: var(--zebra-white); border: 1px solid var(--border); color: var(--med-text); border-radius: 999px; padding: 6px 13px; font-size: 12.5px; cursor: pointer; font-family: inherit; transition: all .15s; min-height: 32px; }
+.btn:hover, .btn:active { background: var(--header-bg); }
+.btn.active { background: linear-gradient(135deg, var(--grad-start), var(--grad-end)); color: white; border-color: transparent; }
+.btn.primary { background: linear-gradient(135deg, var(--grad-start), var(--grad-end)); color: white; border: none; font-weight: 600; }
+.btn.primary:disabled { opacity: .5; }
+input[type="text"], input[type="search"] { flex: 1 1 200px; min-width: 160px; border: 1px solid var(--border); border-radius: 999px; padding: 8px 14px; font-size: 14px; font-family: inherit; outline: none; background: var(--zebra-white); color: var(--dark-text); }
+input:focus { border-color: var(--grad-start); }
+.chk { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; color: var(--med-text); cursor: pointer; user-select: none; }
+.chk input { width: 18px; height: 18px; }
+.grid { display: grid; grid-template-columns: 320px 1fr; gap: 12px; align-items: start; }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+.section { border-radius: 14px; padding: 12px; border: 1px solid var(--border); }
+.section-A { background: var(--header-bg); }
+.section-B { background: var(--red-bg); }
+.section-title { font-size: 13px; font-weight: 700; color: var(--header-text); margin-bottom: 8px; display: flex; align-items: center; gap: 6px; }
+.section-B .section-title { color: var(--red-text); }
+.count { background: rgba(255,255,255,.7); border-radius: 10px; padding: 1px 8px; font-size: 11px; font-weight: 600; }
+.card { background: var(--zebra-white); border: 1px solid var(--border); border-radius: 12px; padding: 11px 13px; margin-bottom: 8px; }
+.card.typeB { border-right: 3px solid var(--red-text); }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-bottom: 8px; }
+.date-label { margin-right: auto; font-size: 11px; color: var(--light-text); }
+.tag { display: inline-block; font-size: 10.5px; padding: 2.5px 9px; border-radius: 12px; font-weight: 600; border: 1px solid transparent; white-space: nowrap; }
+.tag.today { background: linear-gradient(135deg, var(--grad-start), var(--grad-end)); color: white; }
+.tag.unread { background: var(--grp-blue-bg); color: var(--grp-blue-text); border-color: rgba(30,64,175,.2); }
+.tag.phrasing { background: var(--grp-purple-bg); color: var(--grp-purple-text); border-color: rgba(109,40,217,.2); }
+.tag.wrong { background: var(--grp-red-bg); color: var(--grp-red-text); border-color: rgba(220,38,38,.2); }
+.tag.multiple { background: var(--grp-amber-bg); color: var(--grp-amber-text); border-color: rgba(217,119,6,.2); }
+.tag.explanation { background: var(--grp-teal-bg); color: var(--grp-teal-text); border-color: rgba(15,118,110,.2); }
+.tag.other { background: var(--grp-indigo-bg); color: var(--grp-indigo-text); border-color: rgba(55,48,163,.2); }
+.tag.paid { background: var(--grp-green-bg); color: var(--grp-green-text); border-color: rgba(4,120,87,.2); }
+.tag.free { background: var(--zebra-alt); color: var(--sub-text); border-color: var(--border); }
+.tag.status-wrong { background: var(--red-bg); color: var(--red-text); }
+.tag.status-right { background: var(--green-bg); color: var(--green-text); }
+.tag.status-ns { background: var(--zebra-alt); color: var(--sub-text); }
+.tag.duplicate, .tag.restoration { background: var(--grp-amber-bg); color: var(--grp-amber-text); }
+.meta-row { display: flex; flex-wrap: wrap; gap: 6px 10px; font-size: 11.5px; color: var(--sub-text); margin-bottom: 8px; border-top: 1px dashed var(--border); border-bottom: 1px dashed var(--border); padding: 6px 0; }
+.meta-row span { display: inline-flex; align-items: center; gap: 3px; }
+.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 11px; color: var(--med-text); }
+.issue-label { display: inline-block; background: var(--red-bg); color: var(--red-text); padding: 2px 9px; border-radius: 8px; font-size: 11px; font-weight: 700; margin-bottom: 6px; }
+.issue-text { background: var(--zebra-alt); border-right: 3px solid var(--red-text); padding: 9px 12px; border-radius: 8px; font-size: 14.5px; line-height: 1.55; color: var(--dark-text); margin-bottom: 9px; white-space: pre-wrap; }
+.issue-text.empty { color: var(--light-text); font-style: italic; border-right-color: var(--border); font-size: 13px; }
+.card.typeB .issue-text { background: white; border-right-color: var(--red-text); font-weight: 500; }
+.qmeta { display: flex; flex-wrap: wrap; gap: 5px 10px; font-size: 11.5px; color: var(--med-text); margin-bottom: 8px; }
+.qmeta b { color: var(--dark-text); font-weight: 600; }
+details { margin-bottom: 8px; }
+details summary { cursor: pointer; color: var(--grad-start); font-size: 12px; font-weight: 600; padding: 4px 0; }
+.qbox { margin-top: 6px; padding: 10px; background: var(--zebra-alt); border-radius: 8px; font-size: 13px; line-height: 1.55; }
+.qbox .q-title { font-weight: 600; margin-bottom: 6px; color: var(--dark-text); white-space: pre-wrap; }
+.qbox ul { list-style: none; padding: 0; margin: 0; }
+.qbox li { padding: 5px 8px; border-radius: 6px; margin-bottom: 3px; font-size: 12.5px; }
+.qbox li.correct { background: var(--green-bg); color: var(--green-text); font-weight: 600; }
+.qbox li.distractor { background: var(--red-bg); color: var(--red-text); }
+.qbox .q-expl { margin-top: 8px; padding: 8px; background: var(--grp-blue-bg); color: var(--grp-blue-text); border-radius: 6px; font-size: 12.5px; line-height: 1.5; white-space: pre-wrap; }
+.actions { display: flex; flex-wrap: wrap; gap: 6px; padding-top: 7px; border-top: 1px solid var(--border); }
+.action { background: var(--zebra-alt); border: 1px solid var(--border); color: var(--med-text); padding: 6px 11px; font-size: 11.5px; border-radius: 999px; cursor: pointer; font-family: inherit; min-height: 32px; }
+.action:active { background: var(--header-bg); border-color: var(--grad-start); color: var(--grad-start); }
+.action.done { background: linear-gradient(135deg, var(--grad-start), var(--grad-end)); color: white; border-color: transparent; margin-right: auto; }
+.empty { padding: 18px; text-align: center; color: var(--light-text); font-size: 12.5px; background: rgba(255,255,255,.5); border-radius: 10px; }
+.status-bar { background: linear-gradient(135deg, rgba(90,111,214,.08), rgba(143,115,200,.08)); border: 1px solid rgba(90,111,214,.25); border-radius: 12px; padding: 10px 14px; margin-bottom: 10px; font-size: 12.5px; color: var(--med-text); display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+.status-bar b { color: var(--dark-text); }
+.status-bar.error { background: var(--red-bg); border-color: rgba(220,38,38,.3); color: var(--red-text); }
+.handled-box { background: var(--zebra-white); border: 1px solid var(--border); border-radius: 14px; margin-top: 12px; overflow: hidden; }
+.handled-box summary { padding: 10px 14px; cursor: pointer; font-weight: 600; color: var(--med-text); font-size: 13px; }
+.handled-list { padding: 0 14px 10px; }
+.handled-item { display: flex; gap: 8px; align-items: center; padding: 6px 0; border-bottom: 1px solid var(--border); font-size: 12px; color: var(--sub-text); }
+.handled-item:last-child { border-bottom: none; }
+.handled-item .t { flex: 1; color: var(--med-text); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: var(--dark-text); color: white; padding: 10px 18px; border-radius: 999px; font-size: 13px; box-shadow: 0 8px 24px rgba(0,0,0,.25); z-index: 1000; animation: toast .25s; }
+@keyframes toast { from { opacity: 0; transform: translate(-50%, 10px); } to { opacity: 1; transform: translate(-50%, 0); } }
+.spin { display: inline-block; width: 14px; height: 14px; border: 2px solid var(--border); border-top-color: var(--grad-start); border-radius: 50%; animation: sp 1s linear infinite; vertical-align: middle; margin-left: 6px; }
+@keyframes sp { to { transform: rotate(360deg); } }
+</style>
+</head>
+<body>
+<h1>תור דיווחים — Meteor Focus</h1>
+<div class="sub" id="summary">טוען…</div>
+
+<div class="status-bar" id="statusBar">
+  <span id="statusText"><span class="spin"></span> טוען נתונים…</span>
+  <button class="btn primary" id="refreshBtn" style="margin-right: auto;">🔄 רענן</button>
+</div>
+
+<div class="bar" id="filterBar" style="display:none;">
+  <button class="btn" id="allBtn">🕒 הכל</button>
+  <input type="search" id="searchBox" placeholder="🔍 חיפוש בטקסטים, שאלות, משתמשים…">
+  <label class="chk"><input type="checkbox" id="unreadOnly"> 📬 לא נקראו</label>
+  <label class="chk"><input type="checkbox" id="paidOnly"> 💎 משלמים</label>
+</div>
+
+<div class="grid" id="grid" style="display:none;">
+  <div class="section section-B">
+    <div class="section-title">📩 פניות חדשות <span class="count" id="countB">0</span></div>
+    <div id="listB"></div>
+  </div>
+  <div class="section section-A">
+    <div class="section-title">🐛 דיווחי שאלות <span class="count" id="countA">0</span></div>
+    <div id="listA"></div>
+  </div>
+</div>
+
+<details class="handled-box" id="handledBox" style="display:none;">
+  <summary id="handledSummary">✓ טופלו (0)</summary>
+  <div class="handled-list" id="handledList"></div>
+</details>
+
+<script>
+// ======== Configuration ========
+const DATA_URL = './data.json';
+const STORAGE_KEY = 'meteor-focus-handled-v1';
+
+// ======== State ========
+const state = {
+  data: null,
+  fetchedAt: null,
+  loadedAt: null,
+  error: null,
+  handled: new Set(JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]')),
+  paidOnly: false,
+  unreadOnly: false,
+  search: ''
+};
+
+// ======== Constants ========
+const CLS = {
+  phrasing: { emoji: '🟣', text: 'ניסוח' },
+  wrong: { emoji: '🔴', text: 'תשובה שגויה' },
+  multiple: { emoji: '🟠', text: 'יותר מתשובה אחת' },
+  explanation: { emoji: '🔵', text: 'הסבר לא ברור' },
+  other: { emoji: '⚪', text: 'אחר' }
+};
+const STATUS = {
+  wrong: { cls: 'status-wrong', text: 'טעה' },
+  right: { cls: 'status-right', text: 'נכון' },
+  notSubmited: { cls: 'status-ns', text: 'לא הגיש' },
+  submitedNotFinal: { cls: 'status-ns', text: 'טיוטה' }
+};
+
+// ======== Helpers ========
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function sameDay(a, b) { const d1 = new Date(a), d2 = new Date(b); return d1.getFullYear() === d2.getFullYear() && d1.getMonth() === d2.getMonth() && d1.getDate() === d2.getDate(); }
+function fmtDate(s) {
+  try {
+    const d = new Date(s);
+    const time = d.toLocaleTimeString('he-IL', { hour: '2-digit', minute: '2-digit' });
+    if (sameDay(d, new Date())) return time;
+    return d.toLocaleDateString('he-IL', { day: '2-digit', month: '2-digit' }) + ' ' + time;
+  } catch { return s; }
+}
+function fmtRel(iso) {
+  if (!iso) return '—';
+  const ms = Date.now() - new Date(iso).getTime();
+  if (ms < 0) return 'עכשיו';
+  const mins = Math.floor(ms / 60000);
+  if (mins < 1) return 'עכשיו';
+  if (mins < 60) return `לפני ${mins} דק׳`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24) return `לפני ${hrs} שעות`;
+  return `לפני ${Math.floor(hrs / 24)} ימים`;
+}
+function truncId(s, n = 8) {
+  if (!s) return '—';
+  return s.length > n * 2 ? s.slice(0, n) + '…' + s.slice(-4) : s;
+}
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; }
+  catch {
+    try {
+      const ta = document.createElement('textarea');
+      ta.value = text; ta.style.position = 'fixed'; ta.style.opacity = '0';
+      document.body.appendChild(ta); ta.select();
+      const ok = document.execCommand('copy'); ta.remove();
+      return ok;
+    } catch { return false; }
+  }
+}
+function showToast(msg) {
+  const prev = document.querySelector('.toast');
+  if (prev) prev.remove();
+  const t = document.createElement('div');
+  t.className = 'toast'; t.textContent = msg;
+  document.body.appendChild(t);
+  setTimeout(() => t.remove(), 1800);
+}
+function saveHandled() {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify([...state.handled]));
+}
+
+// ======== Data shaping ========
+function getThreads() {
+  if (!state.data?.threads) return [];
+  return state.data.threads
+    .map(t => ({ ...t, type: t.body?.extra_details ? 'A' : 'B' }))
+    .sort((a, b) => new Date(b.date) - new Date(a.date));
+}
+function getQuestionCounts(threads) {
+  const c = {};
+  threads.forEach(t => {
+    const qid = t.body?.extra_details?.question_id;
+    if (qid) c[qid] = (c[qid] || 0) + 1;
+  });
+  return c;
+}
+function getVisible(threads) {
+  const s = state.search.trim().toLowerCase();
+  return threads.filter(t => {
+    if (state.handled.has(t.id)) return false;
+    if (state.unreadOnly && !t.isUnread) return false;
+    const isPaid = (t.body?.user_details?.roleType || []).includes('Paid');
+    if (state.paidOnly && !isPaid) return false;
+    if (s) {
+      const hay = JSON.stringify(t.body || {}).toLowerCase();
+      if (!hay.includes(s)) return false;
+    }
+    return true;
+  });
+}
+
+// ======== Rendering ========
+function renderCardA(item, repeatCount) {
+  const b = item.body;
+  const ed = b.extra_details || {};
+  const isPaid = (b.user_details?.roleType || []).includes('Paid');
+  const today = sameDay(item.date, new Date());
+  const clsInfo = CLS[item.classification];
+  const stat = ed.status && STATUS[ed.status];
+  const gmailUrl = `https://mail.google.com/mail/u/0/#inbox/${item.id}`;
+  const hasText = b.issue_text && b.issue_text.trim().length > 0;
+
+  const distractors = [ed.false_one, ed.false_two, ed.false_three].filter(Boolean)
+    .map(a => `<li class="distractor">✗ ${esc(a)}</li>`).join('');
+
+  const qmetaParts = [];
+  if (ed.category) qmetaParts.push(`<span>📚 <b>${esc(ed.category)}</b></span>`);
+  if (ed.division) qmetaParts.push(`<span>· ${esc(ed.division)}</span>`);
+  if (ed.subdivision) qmetaParts.push(`<span>· ${esc(ed.subdivision)}</span>`);
+  if (ed.level) qmetaParts.push(`<span>· 🎯 ${esc(ed.level)}</span>`);
+  if (ed.question_number != null) qmetaParts.push(`<span>· #${ed.question_number}</span>`);
+
+  return `
+    <div class="card" data-id="${esc(item.id)}">
+      <div class="tags">
+        ${today ? '<span class="tag today">✨ היום</span>' : ''}
+        ${item.isUnread ? '<span class="tag unread">📬 לא נקרא</span>' : ''}
+        ${clsInfo ? `<span class="tag ${item.classification}">${clsInfo.emoji} ${clsInfo.text}</span>` : ''}
+        ${isPaid ? '<span class="tag paid">💎 Paid</span>' : '<span class="tag free">חינמי</span>'}
+        ${stat ? `<span class="tag ${stat.cls}">${stat.text}</span>` : ''}
+        ${repeatCount >= 2 ? `<span class="tag duplicate">🔁 דווחה ${repeatCount}×</span>` : ''}
+        ${ed.is_restoration ? '<span class="tag restoration">🔁 שיחזור</span>' : ''}
+        <span class="date-label">${esc(fmtDate(item.date))}</span>
+      </div>
+      <div class="meta-row">
+        <span>💻 ${esc(b.os_details?.name || '—')} / ${esc(b.os_details?.os || '—')}</span>
+        ${ed.question_id ? `<span>🆔 <span class="mono">${esc(truncId(ed.question_id, 8))}</span></span>` : ''}
+        ${b.user_details?.userId ? `<span>👤 <span class="mono">${esc(truncId(b.user_details.userId, 10))}</span></span>` : ''}
+      </div>
+      <div class="issue-label">▸ בעיה</div>
+      <div class="issue-text${hasText ? '' : ' empty'}">${hasText ? esc(b.issue_text) : '(אין טקסט תלונה — המשתמש שלח דיווח ריק)'}</div>
+      ${qmetaParts.length ? `<div class="qmeta">${qmetaParts.join('')}</div>` : ''}
+      ${ed.question_text ? `
+        <details>
+          <summary>הצג שאלה ותשובות</summary>
+          <div class="qbox">
+            <div class="q-title">${esc(ed.question_text)}</div>
+            <ul>
+              ${ed.right_answer ? `<li class="correct">✓ ${esc(ed.right_answer)}</li>` : ''}
+              ${distractors}
+            </ul>
+            ${ed.explanation ? `<div class="q-expl"><b>הסבר:</b> ${esc(ed.explanation)}</div>` : ''}
+          </div>
+        </details>
+      ` : ''}
+      <div class="actions">
+        ${ed.question_text ? `<button class="action" data-act="copy-q">📋 שאלה</button>` : ''}
+        ${ed.question_id ? `<button class="action" data-act="copy-qid">📋 Q-ID</button>` : ''}
+        ${b.user_details?.userId ? `<button class="action" data-act="copy-uid">📋 User-ID</button>` : ''}
+        <button class="action" data-act="copy-url">📋 קישור Gmail</button>
+        <button class="action done" data-act="handle">✓ טופל</button>
+      </div>
+    </div>`;
+}
+function renderCardB(item) {
+  const b = item.body;
+  const isPaid = (b.user_details?.roleType || []).includes('Paid');
+  const today = sameDay(item.date, new Date());
+  return `
+    <div class="card typeB" data-id="${esc(item.id)}">
+      <div class="tags">
+        ${today ? '<span class="tag today">✨ היום</span>' : ''}
+        ${item.isUnread ? '<span class="tag unread">📬 לא נקרא</span>' : ''}
+        ${isPaid ? '<span class="tag paid">💎 Paid</span>' : '<span class="tag free">חינמי</span>'}
+        <span class="date-label">${esc(fmtDate(item.date))}</span>
+      </div>
+      <div class="issue-text">${esc(b.issue_text || '(אין טקסט)')}</div>
+      <div class="meta-row">
+        <span>💻 ${esc(b.os_details?.name || '—')} / ${esc(b.os_details?.os || '—')}</span>
+        ${b.user_details?.userId ? `<span>👤 <span class="mono">${esc(truncId(b.user_details.userId, 8))}</span></span>` : ''}
+      </div>
+      <div class="actions">
+        ${b.user_details?.userId ? `<button class="action" data-act="copy-uid">📋 User-ID</button>` : ''}
+        <button class="action" data-act="copy-url">📋 קישור Gmail</button>
+        <button class="action done" data-act="handle">✓ טופל</button>
+      </div>
+    </div>`;
+}
+function buildQuestionCopy(ed) {
+  const parts = [];
+  if (ed.question_text) parts.push(ed.question_text.trim());
+  parts.push('');
+  const map = { a: ed.right_answer, b: ed.false_one, c: ed.false_two, d: ed.false_three };
+  let answers;
+  if (Array.isArray(ed.question_order) && ed.question_order.length === 4) {
+    answers = ed.question_order.map(k => map[k]).filter(Boolean);
+  } else {
+    answers = [ed.right_answer, ed.false_one, ed.false_two, ed.false_three].filter(Boolean);
+  }
+  answers.forEach((a, i) => parts.push(`${i + 1}. ${a.trim()}`));
+  if (ed.explanation) { parts.push(''); parts.push('הסבר:'); parts.push(ed.explanation.trim()); }
+  return parts.join('\n');
+}
+
+function render() {
+  const threads = getThreads();
+  const visible = getVisible(threads);
+  const qCounts = getQuestionCounts(threads);
+  const typeA = visible.filter(t => t.type === 'A');
+  const typeB = visible.filter(t => t.type === 'B');
+  const handledItems = threads.filter(t => state.handled.has(t.id));
+
+  document.getElementById('summary').textContent =
+    `מציג ${visible.length} מתוך ${threads.length} דיווחים · ${typeA.length} 🐛 · ${typeB.length} 📩 · ${handledItems.length} טופלו`;
+
+  document.getElementById('countA').textContent = typeA.length;
+  document.getElementById('countB').textContent = typeB.length;
+
+  const listA = document.getElementById('listA');
+  const listB = document.getElementById('listB');
+  listA.innerHTML = typeA.length === 0
+    ? `<div class="empty">אין דיווחי שאלות${visible.length === 0 && threads.length > 0 ? ' (סינון פעיל)' : ''}</div>`
+    : typeA.map(t => renderCardA(t, qCounts[t.body?.extra_details?.question_id] || 0)).join('');
+  listB.innerHTML = typeB.length === 0
+    ? `<div class="empty">אין פניות כלליות</div>`
+    : typeB.map(renderCardB).join('');
+
+  const handledBox = document.getElementById('handledBox');
+  if (handledItems.length > 0) {
+    handledBox.style.display = '';
+    document.getElementById('handledSummary').textContent = `✓ טופלו (${handledItems.length})`;
+    document.getElementById('handledList').innerHTML = handledItems.map(t => `
+      <div class="handled-item" data-id="${esc(t.id)}">
+        <span>${t.type === 'A' ? '🐛' : '📩'}</span>
+        <span class="t">${esc((t.body?.issue_text || '(ללא טקסט)').slice(0, 100))}</span>
+        <span>${esc(fmtDate(t.date))}</span>
+        <button class="action" data-act="unhandle">↩ החזר</button>
+      </div>`).join('');
+  } else {
+    handledBox.style.display = 'none';
+  }
+}
+
+function renderStatus() {
+  const bar = document.getElementById('statusBar');
+  const txt = document.getElementById('statusText');
+  if (state.error) {
+    bar.classList.add('error');
+    txt.innerHTML = `🔴 <span><b>שגיאה:</b> ${esc(state.error)} · נסי לרענן</span>`;
+  } else if (state.data) {
+    bar.classList.remove('error');
+    txt.innerHTML = `🟢 <span><b>חי</b> · Routine עדכנה ${fmtRel(state.data.fetched_at)} · נטען ${fmtRel(state.loadedAt)}</span>`;
+  } else {
+    txt.innerHTML = `<span class="spin"></span> טוען…`;
+  }
+}
+
+// ======== Event handlers ========
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('[data-act]');
+  if (!btn) return;
+  const card = btn.closest('[data-id]');
+  if (!card) return;
+  const id = card.dataset.id;
+  const item = state.data?.threads.find(t => t.id === id);
+  if (!item) return;
+  const b = item.body;
+  const ed = b?.extra_details || {};
+  const act = btn.dataset.act;
+
+  if (act === 'handle') {
+    state.handled.add(id);
+    saveHandled();
+    render();
+  } else if (act === 'unhandle') {
+    state.handled.delete(id);
+    saveHandled();
+    render();
+  } else if (act === 'copy-q') {
+    const ok = await copyText(buildQuestionCopy(ed));
+    showToast(ok ? 'הועתק: שאלה מלאה' : 'העתקה נכשלה');
+  } else if (act === 'copy-qid') {
+    const ok = await copyText(ed.question_id);
+    showToast(ok ? 'הועתק: Q-ID' : 'העתקה נכשלה');
+  } else if (act === 'copy-uid') {
+    const ok = await copyText(b.user_details?.userId || '');
+    showToast(ok ? 'הועתק: User-ID' : 'העתקה נכשלה');
+  } else if (act === 'copy-url') {
+    const ok = await copyText(`https://mail.google.com/mail/u/0/#inbox/${id}`);
+    showToast(ok ? 'הועתק: קישור Gmail' : 'העתקה נכשלה');
+  }
+});
+
+document.getElementById('searchBox').addEventListener('input', (e) => { state.search = e.target.value; render(); });
+document.getElementById('unreadOnly').addEventListener('change', (e) => { state.unreadOnly = e.target.checked; render(); });
+document.getElementById('paidOnly').addEventListener('change', (e) => { state.paidOnly = e.target.checked; render(); });
+document.getElementById('allBtn').addEventListener('click', () => {
+  state.search = ''; state.unreadOnly = false; state.paidOnly = false;
+  document.getElementById('searchBox').value = '';
+  document.getElementById('unreadOnly').checked = false;
+  document.getElementById('paidOnly').checked = false;
+  render();
+});
+document.getElementById('refreshBtn').addEventListener('click', fetchData);
+
+// Re-fetch when user returns to the tab
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && state.data) {
+    // only auto-refresh if data is older than 5 minutes
+    const age = Date.now() - new Date(state.loadedAt).getTime();
+    if (age > 5 * 60 * 1000) fetchData();
+  }
+});
+
+// ======== Fetching ========
+async function fetchData() {
+  const btn = document.getElementById('refreshBtn');
+  btn.disabled = true;
+  state.error = null;
+  renderStatus();
+  try {
+    const res = await fetch(DATA_URL + '?t=' + Date.now(), { cache: 'no-store' });
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const json = await res.json();
+    state.data = json;
+    state.loadedAt = new Date().toISOString();
+    document.getElementById('filterBar').style.display = '';
+    document.getElementById('grid').style.display = '';
+    renderStatus();
+    render();
+  } catch (e) {
+    state.error = e.message || String(e);
+    renderStatus();
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+// ======== Init ========
+fetchData();
+
+// Update relative times every 30 seconds
+setInterval(() => { if (state.data) renderStatus(); }, 30000);
+</script>
+</body>
+</html>
