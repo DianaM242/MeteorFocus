@@ -1,2 +1,14 @@
+# Python
 __pycache__/
 *.pyc
+venv/
+.venv/
+
+# OAuth credentials — NEVER commit these
+credentials.json
+token.json
+*.env
+
+# OS junk
+.DS_Store
+Thumbs.db
