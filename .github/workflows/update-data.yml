@@ -1,0 +1,52 @@
+# Fetches feedback emails from Gmail via IMAP and updates data.json.
+#
+# Required repo secrets (Settings → Secrets and variables → Actions):
+#   GMAIL_ADDRESS        e.g. meteorfocus@gmail.com
+#   GMAIL_APP_PASSWORD   16-char app password from myaccount.google.com/apppasswords
+#                        (requires 2FA enabled on the Gmail account)
+#
+# Schedule: every 15 minutes. Note: GitHub cron is best-effort and can be
+# delayed 5-15 minutes under load. Also triggerable manually from the Actions tab.
+
+name: Update data.json from Gmail
+
+on:
+  schedule:
+    - cron: "*/15 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch emails and update data.json
+        env:
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python scripts/fetch_data.py
+
+      - name: Commit and push if changed
+        run: |
+          if [[ -z "$(git status --porcelain data.json)" ]]; then
+            echo "No changes to data.json"
+            exit 0
+          fi
+          summary=$(python -c "import json; d=json.load(open('data.json')); print(f\"{d['total_count']} threads, {d['unread_count']} unread\")")
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data.json
+          git commit -m "chore: update snapshot (${summary})"
+          git push
