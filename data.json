@@ -1,6 +1,74 @@
 {
-  "fetched_at": "2026-05-14T06:09:56Z",
-  "total_count": 0,
+  "fetched_at": "2026-05-17T06:10:55Z",
+  "total_count": 1,
   "unread_count": 0,
-  "threads": []
+  "threads": [
+    {
+      "id": "19e272cf3e62db77",
+      "date": "2026-05-14T15:48:37Z",
+      "isUnread": false,
+      "classification": "other",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "148.0.0",
+          "os": "Android OS",
+          "type": "browser"
+        },
+        "issue_text": "",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "auth0|6a01eacf964d9c202cb87926",
+          "userId": "auth0|6a01eacf964d9c202cb87926"
+        },
+        "extra_details": {
+          "question_text": "איזה מהגורמים הבאים מהווה גורם סיכון להתפתחות פגיעה כלייתית חדה (Acute Kidney Injury)?",
+          "right_answer": "תת לחץ דם (Hypotension)",
+          "false_one": "היפרנתרמיה (Hypernatremia)",
+          "false_two": "תזונה עשירה בחלבון",
+          "false_three": "עלייה ברמת הפעילות הגופנית",
+          "category": "סיעוד המבוגר",
+          "division": "נפרולוגיה",
+          "subdivision": "פגיעה כלייתית חריפה - AKI",
+          "level": "הבנה",
+          "explanation": "תת לחץ דם (Hypotension) מוכר כגורם סיכון משמעותי להתפתחות פגיעה כלייתית חדה (AKI), כיוון שהוא עלול לפגוע בפרפוזיה הכלייתית ולהוביל לאיסכמיה. בין הגורמים הנוספים המעלים את הסיכון ל-AKI ניתן למנות מצבי התייבשות (Dehydration), הלם (Shock), זיהום מערכתי (Sepsis) ושימוש בתרופות בעלות רעילות כלייתית. היפרנתרמיה (תשובה ב') אינה מהווה סיכון ישיר לפגיעה כלייתית חדה. תזונה עתירת חלבון (תשובה ג') ועלייה ברמת הפעילות הגופנית (תשובה ד') אינן נחשבות כגורמי סיכון להתפתחות AKI.",
+          "question_order": [
+            "d",
+            "c",
+            "a",
+            "b"
+          ],
+          "question_selection": "b",
+          "status": "wrong",
+          "question_number": 101,
+          "question": {
+            "question_id": "f026880a-7db5-4309-8d5b-04fa66611959",
+            "question_text": "איזה מהגורמים הבאים מהווה גורם סיכון להתפתחות פגיעה כלייתית חדה (Acute Kidney Injury)?",
+            "right_answer": "תת לחץ דם (Hypotension)",
+            "false_one": "היפרנתרמיה (Hypernatremia)",
+            "false_two": "תזונה עשירה בחלבון",
+            "false_three": "עלייה ברמת הפעילות הגופנית",
+            "category": "סיעוד המבוגר",
+            "division": "נפרולוגיה",
+            "subdivision": "פגיעה כלייתית חריפה - AKI",
+            "level": "הבנה",
+            "time_modified": "2024-08-14T17:03:18.197Z",
+            "explanation": "תת לחץ דם (Hypotension) מוכר כגורם סיכון משמעותי להתפתחות פגיעה כלייתית חדה (AKI), כיוון שהוא עלול לפגוע בפרפוזיה הכלייתית ולהוביל לאיסכמיה. בין הגורמים הנוספים המעלים את הסיכון ל-AKI ניתן למנות מצבי התייבשות (Dehydration), הלם (Shock), זיהום מערכתי (Sepsis) ושימוש בתרופות בעלות רעילות כלייתית. היפרנתרמיה (תשובה ב') אינה מהווה סיכון ישיר לפגיעה כלייתית חדה. תזונה עתירת חלבון (תשובה ג') ועלייה ברמת הפעילות הגופנית (תשובה ד') אינן נחשבות כגורמי סיכון להתפתחות AKI.",
+            "is_restoration": false,
+            "restoration_cycle": null
+          },
+          "test_id": "ecf8ebeb-2803-4d6e-a554-391f801b8bd6",
+          "user_id": "auth0|6a01eacf964d9c202cb87926",
+          "test_question_id": "3efeb18d-f9d2-4056-9fce-583143b2b796",
+          "question_id": "f026880a-7db5-4309-8d5b-04fa66611959",
+          "time_modified": "2024-08-14T17:03:18.197Z",
+          "is_restoration": false,
+          "restoration_cycle": null,
+          "attachment": ""
+        }
+      }
+    }
+  ]
 }
