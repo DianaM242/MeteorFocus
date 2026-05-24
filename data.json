@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-05-23T06:07:43Z",
-  "total_count": 2,
+  "fetched_at": "2026-05-24T06:07:17Z",
+  "total_count": 1,
   "unread_count": 0,
   "threads": [
     {
@@ -22,74 +22,6 @@
           ],
           "sub": "auth0|69ecee5320dc062aa5c5625b",
           "userId": "auth0|69ecee5320dc062aa5c5625b"
-        }
-      }
-    },
-    {
-      "id": "19e443ed48d53bc5",
-      "date": "2026-05-20T07:17:08Z",
-      "isUnread": false,
-      "classification": "other",
-      "body": {
-        "os_details": {
-          "name": "chrome",
-          "version": "148.0.0",
-          "os": "Windows 10",
-          "type": "browser"
-        },
-        "issue_text": "באחת התשובות ישנה שגיאת כתיב ",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|6a01eaf4a4398d1e91619573",
-          "userId": "auth0|6a01eaf4a4398d1e91619573"
-        },
-        "extra_details": {
-          "question_text": "כל הבאים מהווים גורם סיכון למחלת דלקת האגן (PID), פרט ל:",
-          "right_answer": "אנדומטריטיס",
-          "false_one": "ריבוי בני זוג  מיניים",
-          "false_two": "תחילת פעילות מינית בגיל מוקדם",
-          "false_three": "שטיפות וגינליות תכונות",
-          "category": "סיעוד האישה",
-          "division": "מצבים כלליים",
-          "subdivision": "דלקת אגנית - PID",
-          "level": "הבנה",
-          "explanation": "גורמי סיכון לדלקת באגן (PID) :\n\t•\tנשים בגיל הפוריות, ובעיקר מתבגרות פעילות מינית\n\t•\tריבוי בני זוג מיניים\n\t•\tבן זוג עם היסטוריה של מספר רב של בני זוג\n\t•\tהיסטוריה קודמת של PID\n\t•\tתחילת פעילות מינית בגיל צעיר\n\t•\tהחדרת התקן תוך רחמי (IUD) לאחרונה\nהסיכון מוגבר בעיקר סביב תקופת ההחדרה, לא בגלל ההתקן עצמו אלא עקב האפשרות לזיהום חיידקי בעת ההחדרה.\n\t•\tשטיפות וגינליות קבועות (Douching)\n\nחשוב להדגיש:\nהתקן תוך רחמי (IUD) בפני עצמו אינו גורם ל-PID, אך התהליך של החדרת ההתקן עלול לגרום לזיהום וזאת בעיקר בתקופה הקרובה לאחר ההתקנה.\n\nגורמים מזהמים עיקריים ב-PID:\n\t•\tכלמידיה טרכומטיס (Chlamydia trachomatis)\n\t•\tנייסריה גונוריאה (Neisseria gonorrhoeae)\n\t•\tגורמים נוספים אפשריים: Gardnerella vaginalis, Haemophilus influenza, Streptococcus agalactiae.\n\nסיבוכים אפשריים לאחר PID:\n\t•\tאי פוריות\n\t•\tהריון חוץ רחמי (Ectopic pregnancy)\n\t•\tזיהומים כרוניים באגן\n\nהערה: PID יכולה להופיע לעיתים גם ללא תסמינים גלויים או עם ערכי מעבדה תקינים",
-          "question_order": [
-            "c",
-            "b",
-            "a",
-            "d"
-          ],
-          "question_selection": "0",
-          "status": "notSubmited",
-          "question_number": 6,
-          "question": {
-            "question_id": "732c8c92-aaf3-418f-8919-3760ce3f3827",
-            "question_text": "כל הבאים מהווים גורם סיכון למחלת דלקת האגן (PID), פרט ל:",
-            "right_answer": "אנדומטריטיס",
-            "false_one": "ריבוי בני זוג  מיניים",
-            "false_two": "תחילת פעילות מינית בגיל מוקדם",
-            "false_three": "שטיפות וגינליות תכונות",
-            "attachment": "",
-            "category": "סיעוד האישה",
-            "division": "מצבים כלליים",
-            "subdivision": "דלקת אגנית - PID",
-            "level": "הבנה",
-            "time_modified": "2025-03-07T06:50:05.135Z",
-            "explanation": "גורמי סיכון לדלקת באגן (PID) :\n\t•\tנשים בגיל הפוריות, ובעיקר מתבגרות פעילות מינית\n\t•\tריבוי בני זוג מיניים\n\t•\tבן זוג עם היסטוריה של מספר רב של בני זוג\n\t•\tהיסטוריה קודמת של PID\n\t•\tתחילת פעילות מינית בגיל צעיר\n\t•\tהחדרת התקן תוך רחמי (IUD) לאחרונה\nהסיכון מוגבר בעיקר סביב תקופת ההחדרה, לא בגלל ההתקן עצמו אלא עקב האפשרות לזיהום חיידקי בעת ההחדרה.\n\t•\tשטיפות וגינליות קבועות (Douching)\n\nחשוב להדגיש:\nהתקן תוך רחמי (IUD) בפני עצמו אינו גורם ל-PID, אך התהליך של החדרת ההתקן עלול לגרום לזיהום וזאת בעיקר בתקופה הקרובה לאחר ההתקנה.\n\nגורמים מזהמים עיקריים ב-PID:\n\t•\tכלמידיה טרכומטיס (Chlamydia trachomatis)\n\t•\tנייסריה גונוריאה (Neisseria gonorrhoeae)\n\t•\tגורמים נוספים אפשריים: Gardnerella vaginalis, Haemophilus influenza, Streptococcus agalactiae.\n\nסיבוכים אפשריים לאחר PID:\n\t•\tאי פוריות\n\t•\tהריון חוץ רחמי (Ectopic pregnancy)\n\t•\tזיהומים כרוניים באגן\n\nהערה: PID יכולה להופיע לעיתים גם ללא תסמינים גלויים או עם ערכי מעבדה תקינים",
-            "is_restoration": false,
-            "restoration_cycle": null
-          },
-          "test_id": "6b54a444-6da1-45f4-b1ca-d3279c224b24",
-          "user_id": "auth0|6a01eaf4a4398d1e91619573",
-          "test_question_id": "2617b44f-60d8-4fc5-9a24-e3822368a741",
-          "question_id": "732c8c92-aaf3-418f-8919-3760ce3f3827",
-          "attachment": "",
-          "time_modified": "2025-03-07T06:50:05.135Z",
-          "is_restoration": false,
-          "restoration_cycle": null
         }
       }
     }
