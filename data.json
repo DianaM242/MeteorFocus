@@ -1,29 +1,6 @@
 {
-  "fetched_at": "2026-05-25T06:06:15Z",
-  "total_count": 1,
+  "fetched_at": "2026-05-26T06:04:38.990Z",
+  "total_count": 0,
   "unread_count": 0,
-  "threads": [
-    {
-      "id": "19e4fb3ba7e2892f",
-      "date": "2026-05-22T12:40:38Z",
-      "isUnread": false,
-      "classification": null,
-      "body": {
-        "os_details": {
-          "name": "safari",
-          "version": "18.6.0",
-          "os": "Mac OS",
-          "type": "browser"
-        },
-        "issue_text": "",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|69ecee5320dc062aa5c5625b",
-          "userId": "auth0|69ecee5320dc062aa5c5625b"
-        }
-      }
-    }
-  ]
+  "threads": []
 }
