@@ -1,6 +1,47 @@
 {
-  "fetched_at": "2026-06-01T06:09:00.288Z",
-  "total_count": 0,
-  "unread_count": 0,
-  "threads": []
+  "fetched_at": "2026-06-02T06:08:55.314Z",
+  "total_count": 2,
+  "unread_count": 2,
+  "threads": [
+    {
+      "id": "19e82159951ce074",
+      "date": "2026-06-01T07:28:32Z",
+      "isUnread": true,
+      "classification": null,
+      "body": {
+        "os_details": {
+          "name": "ios",
+          "version": "18.7.5",
+          "os": "iOS",
+          "type": "browser"
+        },
+        "issue_text": "כמה מחיר החבילה עד כמה זמן פתוחה איפה כל הפרטים אלה?\nתודה",
+        "user_details": {
+          "roleType": [],
+          "sub": "auth0|6a1d3451911559564c24dcc5",
+          "userId": "auth0|6a1d3451911559564c24dcc5"
+        }
+      }
+    },
+    {
+      "id": "19e8215945765afb",
+      "date": "2026-06-01T07:28:32Z",
+      "isUnread": true,
+      "classification": null,
+      "body": {
+        "os_details": {
+          "name": "ios",
+          "version": "18.7.5",
+          "os": "iOS",
+          "type": "browser"
+        },
+        "issue_text": "כמה מחיר החבילה עד כמה זמן פתוחה איפה כל הפרטים אלה?\nתודה",
+        "user_details": {
+          "roleType": [],
+          "sub": "auth0|6a1d3451911559564c24dcc5",
+          "userId": "auth0|6a1d3451911559564c24dcc5"
+        }
+      }
+    }
+  ]
 }
