@@ -1,6 +1,29 @@
 {
-  "fetched_at": "2026-06-17T06:04:35Z",
-  "total_count": 0,
+  "fetched_at": "2026-06-18T06:03:35Z",
+  "total_count": 1,
   "unread_count": 0,
-  "threads": []
+  "threads": [
+    {
+      "id": "19ed729245251143",
+      "date": "2026-06-17T19:57:37Z",
+      "isUnread": false,
+      "classification": null,
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "שלום האם השאלת באתר עדכני למבחן ממשלתי לפני ברונר.?",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "google-oauth2|117531392948071193855",
+          "userId": "google-oauth2|117531392948071193855"
+        }
+      }
+    }
+  ]
 }
