@@ -1,8 +1,140 @@
 {
-  "fetched_at": "2026-06-24T06:03:45Z",
-  "total_count": 3,
+  "fetched_at": "2026-06-25T06:05:32.102Z",
+  "total_count": 5,
   "unread_count": 0,
   "threads": [
+    {
+      "id": "19ef963a48e7a6eb",
+      "date": "2026-06-24T11:28:37Z",
+      "isUnread": false,
+      "classification": "wrong",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "הי, זה לא 5-15? כך למדנו בפרוגנוזה",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "auth0|67b360eee3ac2957c7254879",
+          "userId": "auth0|67b360eee3ac2957c7254879"
+        },
+        "extra_details": {
+          "question_text": "מהו הטווח האופטימלי של לחץ סוף-נשיפתי חיובי (PEEP - Positive End-Expiratory Pressure) במטופלים המונשמים באמצעות מכונת הנשמה?\r\n",
+          "right_answer": "5-6 cmH2O",
+          "false_one": "2-4 cmH2O",
+          "false_two": "8-10 cmH2O",
+          "false_three": "10-15 cmH2O",
+          "category": "סיעוד המבוגר",
+          "division": "הסביבה הניתוחית",
+          "subdivision": "התערבות טיפולית",
+          "level": "ידע",
+          "explanation": "הטווח המומלץ של לחץ סוף-נשיפה חיובי (PEEP) במטופלים המחוברים להנשמה מלאכותית נע בין 5 ל-6 cmH2O. יישום לחץ זה מסייע במניעת קריסה של נאדיות הריאה (Alveolar Collapse), משפר את יעילות חילופי הגזים, ומפחית את הסיכון להתפתחות אטלקטזיס (Atelectasis) בריאות.\r\n",
+          "question_order": [
+            "d",
+            "b",
+            "c",
+            "a"
+          ],
+          "question_selection": "d",
+          "status": "wrong",
+          "question_number": 8,
+          "question": {
+            "question_id": "a33b8156-a9ea-4d60-aad6-a80ef195d77b",
+            "question_text": "מהו הטווח האופטימלי של לחץ סוף-נשיפתי חיובי (PEEP - Positive End-Expiratory Pressure) במטופלים המונשמים באמצעות מכונת הנשמה?\r\n",
+            "right_answer": "5-6 cmH2O",
+            "false_one": "2-4 cmH2O",
+            "false_two": "8-10 cmH2O",
+            "false_three": "10-15 cmH2O",
+            "category": "סיעוד המבוגר",
+            "division": "הסביבה הניתוחית",
+            "subdivision": "התערבות טיפולית",
+            "level": "ידע",
+            "time_modified": "2024-08-14T17:03:18.122Z",
+            "explanation": "הטווח המומלץ של לחץ סוף-נשיפה חיובי (PEEP) במטופלים המחוברים להנשמה מלאכותית נע בין 5 ל-6 cmH2O. יישום לחץ זה מסייע במניעת קריסה של נאדיות הריאה (Alveolar Collapse), משפר את יעילות חילופי הגזים, ומפחית את הסיכון להתפתחות אטלקטזיס (Atelectasis) בריאות.\r\n",
+            "is_restoration": false,
+            "restoration_cycle": null
+          },
+          "test_id": "107896c2-8c1b-46e3-b2c3-233257e32738",
+          "user_id": "auth0|67b360eee3ac2957c7254879",
+          "test_question_id": "bafff9f1-7b91-4b99-99a2-cde6c8cc86ac",
+          "question_id": "a33b8156-a9ea-4d60-aad6-a80ef195d77b",
+          "attachment": "",
+          "time_modified": "2024-08-14T17:03:18.122Z",
+          "is_restoration": false,
+          "restoration_cycle": null
+        }
+      }
+    },
+    {
+      "id": "19ef93ba8a034374",
+      "date": "2026-06-24T10:44:56Z",
+      "isUnread": false,
+      "classification": "other",
+      "body": {
+        "os_details": {
+          "name": "crios",
+          "version": "149.0.7827",
+          "os": "iOS",
+          "type": "browser"
+        },
+        "issue_text": "",
+        "user_details": {
+          "roleType": [],
+          "sub": "google-oauth2|105759104446843520167",
+          "userId": "google-oauth2|105759104446843520167"
+        },
+        "extra_details": {
+          "question_text": "מהו תפקידו של אזור הפנאומוטקסי במרכז בקרת הנשימה?",
+          "right_answer": "מעכב את המרכז השאיפתי ומונע התמלאות יתר",
+          "false_one": "מעורר את המרכז השאיפתי ומגביר נשימה",
+          "false_two": "שולט על שרירי הנשיפה המאומצת",
+          "false_three": "מווסת את לחץ הדם הפולמונרי",
+          "category": "אנטומיה פיזיולוגיה",
+          "division": "מערכת הנשימה",
+          "subdivision": null,
+          "level": "ידע",
+          "explanation": null,
+          "question_order": [
+            "d",
+            "a",
+            "c",
+            "b"
+          ],
+          "question_selection": "a",
+          "status": "right",
+          "question_number": 13,
+          "question": {
+            "question_id": "fdc3f5af-7f4a-4e06-8ba4-5ac131fe7a1e",
+            "question_text": "מהו תפקידו של אזור הפנאומוטקסי במרכז בקרת הנשימה?",
+            "right_answer": "מעכב את המרכז השאיפתי ומונע התמלאות יתר",
+            "false_one": "מעורר את המרכז השאיפתי ומגביר נשימה",
+            "false_two": "שולט על שרירי הנשיפה המאומצת",
+            "false_three": "מווסת את לחץ הדם הפולמונרי",
+            "category": "אנטומיה פיזיולוגיה",
+            "division": "מערכת הנשימה",
+            "subdivision": null,
+            "level": "ידע",
+            "time_modified": null,
+            "explanation": null,
+            "is_restoration": null,
+            "restoration_cycle": null
+          },
+          "test_id": "c119b4cc-da05-4e14-a5a3-1fea4f2255b5",
+          "user_id": "google-oauth2|105759104446843520167",
+          "test_question_id": "ac09765b-2e74-423a-995a-51f09c0d039b",
+          "question_id": "fdc3f5af-7f4a-4e06-8ba4-5ac131fe7a1e",
+          "time_modified": null,
+          "is_restoration": null,
+          "restoration_cycle": null,
+          "attachment": ""
+        }
+      }
+    },
     {
       "id": "19ef48341b6dcaca",
       "date": "2026-06-23T12:45:02Z",
