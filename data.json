@@ -1,6 +1,6 @@
 {
-  "fetched_at": "2026-06-26T06:04:31Z",
-  "total_count": 5,
+  "fetched_at": "2026-06-27T06:04:16Z",
+  "total_count": 4,
   "unread_count": 0,
   "threads": [
     {
@@ -218,26 +218,6 @@
           "is_restoration": null,
           "restoration_cycle": null,
           "attachment": ""
-        }
-      }
-    },
-    {
-      "id": "19ef48341b6dcaca",
-      "date": "2026-06-23T12:45:02Z",
-      "isUnread": false,
-      "classification": null,
-      "body": {
-        "os_details": {
-          "name": "chrome",
-          "version": "149.0.0",
-          "os": "Windows 10",
-          "type": "browser"
-        },
-        "issue_text": "שלום,\nקודם כל, תודה רבה על המשאב הזה ללמידה לממשלתי. שנית, רציתי לשאול האם המאגר עודכן לספר ברונר עליו אנו צפויים להיבחן במועד ספטמבר הקרוב?\nתודה מראש,\nבברכה - טלי אפשטיין, מועד ספ' 2026\nאוניברסיטת אריאל",
-        "user_details": {
-          "name": "טלי אפשטיין",
-          "email": "ttein30@gmail.com",
-          "phone": "0527303144"
         }
       }
     }
