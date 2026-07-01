@@ -1,6 +1,206 @@
 {
-  "fetched_at": "2026-06-30T06:04:24Z",
-  "total_count": 0,
+  "fetched_at": "2026-07-01T06:04:34Z",
+  "total_count": 3,
   "unread_count": 0,
-  "threads": []
+  "threads": [
+    {
+      "id": "19f182d3bff34f74",
+      "date": "2026-06-30T10:57:24Z",
+      "isUnread": false,
+      "classification": "other",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "שגיאת כתיב:\nנחש ארסי\nלא נחש ערסי",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "google-oauth2|107783790584389983630",
+          "userId": "google-oauth2|107783790584389983630"
+        },
+        "extra_details": {
+          "question_text": "אחות מעריכה מטופל שנפגע מנשיכת נחש ערסי (Coral Snake). איזו מערכת גוף על האחות להעריך ראשונה?",
+          "right_answer": "מערכת הלב והריאות (Cardiopulmonary System)",
+          "false_one": "התפתחות נפיחות מקומית חד-צדדית (Unilateral Localized Swelling)",
+          "false_two": "זמני קרישת הדם (Coagulation Times)",
+          "false_three": "קצב הלב באמצעות א.ק.ג (ECG Monitoring)",
+          "category": "סיעוד המבוגר",
+          "division": "רפואת חירום",
+          "subdivision": "התערבות סיעודית",
+          "level": "ידע",
+          "explanation": "תשובה נכונה\nמערכת הלב והריאות (Cardiopulmonary System): בנשיכת נחש ארסי, הארס עלול לפגוע במערכת הלב והנשימה ולסכן חיים. לפיכך ההערכה הראשונה צריכה להתמקד במערכת הלב והריאות, בהתאם לעקרון ה ABC. הערכת הנפיחות המקומית וזמני הקרישה משנית להבטחת תפקוד הלב והנשימה.\n\nתשובות שגויות\nהתפתחות נפיחות מקומית חד צדדית (Unilateral Localized Swelling): נפיחות מקומית היא סימן הערכה, אך אינה המערכת הראשונה להערכה לפני הבטחת תפקוד הלב והנשימה.\n\nזמני קרישת הדם (Coagulation Times): הפרעות קרישה אפשריות בנשיכת נחש, אך הערכתן משנית להערכת הלב והנשימה.\n\nקצב הלב באמצעות א.ק.ג (ECG Monitoring): ניטור א.ק.ג הוא חלק מהערכת מערכת הלב, אך ההערכה הראשונה היא של מערכת הלב והריאות כמכלול.",
+          "question_order": [
+            "d",
+            "a",
+            "c",
+            "b"
+          ],
+          "question_selection": "0",
+          "status": "notSubmited",
+          "question_number": 10,
+          "question": {
+            "question_id": "9f80a031-8d12-4a30-9852-f1361a40827c",
+            "question_text": "אחות מעריכה מטופל שנפגע מנשיכת נחש ערסי (Coral Snake). איזו מערכת גוף על האחות להעריך ראשונה?",
+            "right_answer": "מערכת הלב והריאות (Cardiopulmonary System)",
+            "false_one": "התפתחות נפיחות מקומית חד-צדדית (Unilateral Localized Swelling)",
+            "false_two": "זמני קרישת הדם (Coagulation Times)",
+            "false_three": "קצב הלב באמצעות א.ק.ג (ECG Monitoring)",
+            "category": "סיעוד המבוגר",
+            "division": "רפואת חירום",
+            "subdivision": "התערבות סיעודית",
+            "level": "ידע",
+            "time_modified": "2026-06-26T15:22:18.121Z",
+            "explanation": "תשובה נכונה\nמערכת הלב והריאות (Cardiopulmonary System): בנשיכת נחש ארסי, הארס עלול לפגוע במערכת הלב והנשימה ולסכן חיים. לפיכך ההערכה הראשונה צריכה להתמקד במערכת הלב והריאות, בהתאם לעקרון ה ABC. הערכת הנפיחות המקומית וזמני הקרישה משנית להבטחת תפקוד הלב והנשימה.\n\nתשובות שגויות\nהתפתחות נפיחות מקומית חד צדדית (Unilateral Localized Swelling): נפיחות מקומית היא סימן הערכה, אך אינה המערכת הראשונה להערכה לפני הבטחת תפקוד הלב והנשימה.\n\nזמני קרישת הדם (Coagulation Times): הפרעות קרישה אפשריות בנשיכת נחש, אך הערכתן משנית להערכת הלב והנשימה.\n\nקצב הלב באמצעות א.ק.ג (ECG Monitoring): ניטור א.ק.ג הוא חלק מהערכת מערכת הלב, אך ההערכה הראשונה היא של מערכת הלב והריאות כמכלול.",
+            "is_restoration": false,
+            "restoration_cycle": null
+          },
+          "test_id": "867a3c18-4fdb-453c-9062-b4fe44a7b6a7",
+          "user_id": "google-oauth2|107783790584389983630",
+          "test_question_id": "b36de5f5-9f05-4a93-95dd-b1d844db7a20",
+          "question_id": "9f80a031-8d12-4a30-9852-f1361a40827c",
+          "attachment": "",
+          "time_modified": "2026-06-26T15:22:18.121Z",
+          "is_restoration": false,
+          "restoration_cycle": null
+        }
+      }
+    },
+    {
+      "id": "19f17814632f3f4a",
+      "date": "2026-06-30T07:49:35Z",
+      "isUnread": false,
+      "classification": "wrong",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "אשמח לצירוף מקור. ידוע שזה סביב 17 אבל לא ככ לפני",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "auth0|6a4010668444c31ffcd577c7",
+          "userId": "auth0|6a4010668444c31ffcd577c7"
+        },
+        "extra_details": {
+          "question_text": "באיזה שבוע הריון מתבצעת בדיקת מי שפיר (Amniocentesis) למעקב אחר CMV (Cytomegalovirus)?",
+          "right_answer": "שבוע 15 עד 16",
+          "false_one": "שבוע 18 עד 20",
+          "false_two": "שבוע 20 עד 22",
+          "false_three": "שבוע 11 עד 13",
+          "category": "סיעוד האישה",
+          "division": "סיבוכים בהריון",
+          "subdivision": "זיהומים בהריון",
+          "level": "ידע",
+          "explanation": "תשובה נכונה\nשבוע 15 עד 16: בדיקת מי שפיר מתבצעת באופן אידיאלי בשבוע 15 עד 16 להריון, משום שבשלב זה היחס בין התאים החיים לתאים שאינם חיים בנוזל הוא הגבוה ביותר, והרחם נגיש לדיקור דרך הבטן. ביצוע מוקדם מדי, לפני שבוע 14, כרוך בשיעור סיבוכים גבוה יותר בשל היעדר היצמדות מלאה של הקרומים לדופן הרחם. לכן זהו חלון הזמן המומלץ לבדיקה.\n\nתשובות שגויות\nשבוע 18 עד 20: מאוחר יותר מהחלון האידיאלי שמציין המקור.\n\nשבוע 20 עד 22: מאוחר מהמועד המומלץ לבדיקה.\n\nשבוע 11 עד 13: מוקדם מדי; ביצוע לפני שבוע 14 כרוך בסיכון גבוה יותר לסיבוכים.",
+          "question_order": [
+            "b",
+            "d",
+            "c",
+            "a"
+          ],
+          "question_selection": "0",
+          "status": "notSubmited",
+          "question_number": 17,
+          "question": {
+            "question_id": "843dd886-c7b6-4f52-97b5-9e824f300340",
+            "question_text": "באיזה שבוע הריון מתבצעת בדיקת מי שפיר (Amniocentesis) למעקב אחר CMV (Cytomegalovirus)?",
+            "right_answer": "שבוע 15 עד 16",
+            "false_one": "שבוע 18 עד 20",
+            "false_two": "שבוע 20 עד 22",
+            "false_three": "שבוע 11 עד 13",
+            "category": "סיעוד האישה",
+            "division": "סיבוכים בהריון",
+            "subdivision": "זיהומים בהריון",
+            "level": "ידע",
+            "time_modified": "2026-06-27T20:58:38.348Z",
+            "explanation": "תשובה נכונה\nשבוע 15 עד 16: בדיקת מי שפיר מתבצעת באופן אידיאלי בשבוע 15 עד 16 להריון, משום שבשלב זה היחס בין התאים החיים לתאים שאינם חיים בנוזל הוא הגבוה ביותר, והרחם נגיש לדיקור דרך הבטן. ביצוע מוקדם מדי, לפני שבוע 14, כרוך בשיעור סיבוכים גבוה יותר בשל היעדר היצמדות מלאה של הקרומים לדופן הרחם. לכן זהו חלון הזמן המומלץ לבדיקה.\n\nתשובות שגויות\nשבוע 18 עד 20: מאוחר יותר מהחלון האידיאלי שמציין המקור.\n\nשבוע 20 עד 22: מאוחר מהמועד המומלץ לבדיקה.\n\nשבוע 11 עד 13: מוקדם מדי; ביצוע לפני שבוע 14 כרוך בסיכון גבוה יותר לסיבוכים.",
+            "is_restoration": true,
+            "restoration_cycle": "ספטמבר 2025"
+          },
+          "test_id": "510a562e-5dc1-4194-ad9c-b0d32e7e418d",
+          "user_id": "auth0|6a4010668444c31ffcd577c7",
+          "test_question_id": "6a2bb560-60f6-4516-88b2-107c349001dc",
+          "question_id": "843dd886-c7b6-4f52-97b5-9e824f300340",
+          "attachment": "",
+          "time_modified": "2026-06-27T20:58:38.348Z",
+          "is_restoration": true,
+          "restoration_cycle": "ספטמבר 2025"
+        }
+      }
+    },
+    {
+      "id": "19f1754db910bcb6",
+      "date": "2026-06-30T07:01:04Z",
+      "isUnread": false,
+      "classification": "wrong",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "למדנו שרתמה זה עד גיל חצי שנה, ומגיל חצי שנה זה גבס. אשמח למקורות בבקשה",
+        "user_details": {
+          "roleType": [],
+          "sub": "auth0|6a4010668444c31ffcd577c7",
+          "userId": "auth0|6a4010668444c31ffcd577c7"
+        },
+        "extra_details": {
+          "question_text": "מהו הטיפול המומלץ לתינוק בן חצי שנה עם DDH - Developmental Dysplasia of the Hip (דיספלזיה התפתחותית של מפרק הירך)?",
+          "right_answer": "רתמה לחודש וחצי",
+          "false_one": "גבס לחצי שנה",
+          "false_two": "ניתוח",
+          "false_three": "פיזיותרפיה אינטנסיבית",
+          "category": "פדיאטריה",
+          "division": "אורתופדיה",
+          "subdivision": "DDH",
+          "level": "ידע",
+          "explanation": "תשובה נכונה\nרתמה לחודש וחצי: הטיפול המומלץ בתינוק בן חצי שנה עם דיספלזיה התפתחותית של מפרק הירך הוא רתמת אבדוקציה, כגון רתמת Pavlik, הנלבשת ברציפות עד התייצבות הירך. הרתמה שומרת על הירך במנח של כיפוף ופישוק ומאפשרת התפתחות תקינה של המפרק.\n\nתשובות שגויות\nגבס לחצי שנה: גבס אינו הטיפול הראשוני בגיל זה; הרתמה היא הטיפול המועדף בתינוק צעיר.\n\nניתוח: ניתוח שמור למקרים מאוחרים או שאינם מגיבים לטיפול שמרני, ולא לתינוק בן חצי שנה.\n\nפיזיותרפיה אינטנסיבית: אינה הטיפול לדיספלזיה התפתחותית של הירך בתינוק.",
+          "question_order": [
+            "c",
+            "b",
+            "d",
+            "a"
+          ],
+          "question_selection": "b",
+          "status": "wrong",
+          "question_number": 14,
+          "question": {
+            "question_id": "7fa54daa-b145-4d56-b6d5-99ea8adabd89",
+            "question_text": "מהו הטיפול המומלץ לתינוק בן חצי שנה עם DDH - Developmental Dysplasia of the Hip (דיספלזיה התפתחותית של מפרק הירך)?",
+            "right_answer": "רתמה לחודש וחצי",
+            "false_one": "גבס לחצי שנה",
+            "false_two": "ניתוח",
+            "false_three": "פיזיותרפיה אינטנסיבית",
+            "category": "פדיאטריה",
+            "division": "אורתופדיה",
+            "subdivision": "DDH",
+            "level": "ידע",
+            "time_modified": "2026-06-29T11:38:36.684Z",
+            "explanation": "תשובה נכונה\nרתמה לחודש וחצי: הטיפול המומלץ בתינוק בן חצי שנה עם דיספלזיה התפתחותית של מפרק הירך הוא רתמת אבדוקציה, כגון רתמת Pavlik, הנלבשת ברציפות עד התייצבות הירך. הרתמה שומרת על הירך במנח של כיפוף ופישוק ומאפשרת התפתחות תקינה של המפרק.\n\nתשובות שגויות\nגבס לחצי שנה: גבס אינו הטיפול הראשוני בגיל זה; הרתמה היא הטיפול המועדף בתינוק צעיר.\n\nניתוח: ניתוח שמור למקרים מאוחרים או שאינם מגיבים לטיפול שמרני, ולא לתינוק בן חצי שנה.\n\nפיזיותרפיה אינטנסיבית: אינה הטיפול לדיספלזיה התפתחותית של הירך בתינוק.",
+            "is_restoration": true,
+            "restoration_cycle": "אפריל 2024"
+          },
+          "test_id": "112df517-dd3f-4cd7-84a8-49ca92ae0ce4",
+          "user_id": "auth0|6a4010668444c31ffcd577c7",
+          "test_question_id": "d27f6a93-02a1-4f65-bbc7-cee3df38d9c8",
+          "question_id": "7fa54daa-b145-4d56-b6d5-99ea8adabd89",
+          "time_modified": "2026-06-29T11:38:36.684Z",
+          "is_restoration": true,
+          "restoration_cycle": "אפריל 2024",
+          "attachment": ""
+        }
+      }
+    }
+  ]
 }
