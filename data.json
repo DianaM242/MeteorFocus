@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-07-01T06:04:34Z",
+  "fetched_at": "2026-07-02T06:11:11Z",
   "total_count": 3,
   "unread_count": 0,
   "threads": [
@@ -7,7 +7,7 @@
       "id": "19f182d3bff34f74",
       "date": "2026-06-30T10:57:24Z",
       "isUnread": false,
-      "classification": "other",
+      "classification": "phrasing",
       "body": {
         "os_details": {
           "name": "chrome",
