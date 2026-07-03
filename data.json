@@ -1,13 +1,213 @@
 {
-  "fetched_at": "2026-07-02T06:11:11Z",
-  "total_count": 3,
+  "fetched_at": "2026-07-03T06:08:17Z",
+  "total_count": 6,
   "unread_count": 0,
   "threads": [
+    {
+      "id": "19f230cccd11020d",
+      "date": "2026-07-02T13:37:48Z",
+      "isUnread": false,
+      "classification": "multiple",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "מה לגבי פוליו? הוא גם חלק מהמחומשת.. סליחה על כל השאלות",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "auth0|6a4010668444c31ffcd577c7",
+          "userId": "auth0|6a4010668444c31ffcd577c7"
+        },
+        "extra_details": {
+          "question_text": "איזה חיסון ניתן 5 פעמים עד גיל 7?",
+          "right_answer": "DTaP",
+          "false_one": "MMR",
+          "false_two": "Polio",
+          "false_three": "Hepatitis B",
+          "category": "פדיאטריה",
+          "division": "חיסוני שגרה",
+          "subdivision": "לוח חיסונים",
+          "level": "ידע",
+          "explanation": "🔁 שאלה משוחזרת: אפריל 2025 | ספטמבר 2025\n\nתשובה נכונה\nDTaP: חיסון DTaP ניתן חמש פעמים עד גיל שבע: בגיל חודשיים, ארבעה חודשים ושישה חודשים, בגיל 15 עד 18 חודשים, ובגיל 4 עד 6 שנים. לכן זהו החיסון הניתן חמש פעמים עד גיל שבע.\n\nתשובות שגויות\nMMR: חיסון MMR ניתן בשתי מנות, ולא חמש.\n\nPolio: חיסון הפוליו אינו ניתן חמש פעמים עד גיל שבע כמו DTaP.\n\nHepatitis B: חיסון צהבת B ניתן בשלוש מנות, ולא חמש.",
+          "question_order": [
+            "a",
+            "b",
+            "c",
+            "d"
+          ],
+          "question_selection": "c",
+          "status": "wrong",
+          "question_number": 8,
+          "question": {
+            "question_id": "b685d3e3-5039-4466-bf3d-905f772150de",
+            "question_text": "איזה חיסון ניתן 5 פעמים עד גיל 7?",
+            "right_answer": "DTaP",
+            "false_one": "MMR",
+            "false_two": "Polio",
+            "false_three": "Hepatitis B",
+            "category": "פדיאטריה",
+            "division": "חיסוני שגרה",
+            "subdivision": "לוח חיסונים",
+            "level": "ידע",
+            "time_modified": "2026-06-30T22:44:37.479Z",
+            "explanation": "🔁 שאלה משוחזרת: אפריל 2025 | ספטמבר 2025\n\nתשובה נכונה\nDTaP: חיסון DTaP ניתן חמש פעמים עד גיל שבע: בגיל חודשיים, ארבעה חודשים ושישה חודשים, בגיל 15 עד 18 חודשים, ובגיל 4 עד 6 שנים. לכן זהו החיסון הניתן חמש פעמים עד גיל שבע.\n\nתשובות שגויות\nMMR: חיסון MMR ניתן בשתי מנות, ולא חמש.\n\nPolio: חיסון הפוליו אינו ניתן חמש פעמים עד גיל שבע כמו DTaP.\n\nHepatitis B: חיסון צהבת B ניתן בשלוש מנות, ולא חמש.",
+            "is_restoration": true,
+            "restoration_cycle": "אפריל 2025"
+          },
+          "test_id": "7d42327e-4264-4bce-8a28-573283588808",
+          "user_id": "auth0|6a4010668444c31ffcd577c7",
+          "test_question_id": "cc762d5b-2b6b-44a0-8a8b-ff15ad76161e",
+          "question_id": "b685d3e3-5039-4466-bf3d-905f772150de",
+          "time_modified": "2026-06-30T22:44:37.479Z",
+          "is_restoration": true,
+          "restoration_cycle": "אפריל 2025",
+          "attachment": ""
+        }
+      }
+    },
+    {
+      "id": "19f2305ed704449b",
+      "date": "2026-07-02T13:30:18Z",
+      "isUnread": false,
+      "classification": "other",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "היי אולי כדאי להוסיף שם גנרי",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "auth0|6a4010668444c31ffcd577c7",
+          "userId": "auth0|6a4010668444c31ffcd577c7"
+        },
+        "extra_details": {
+          "question_text": "ילד בן 14 קיבל הוראה לטיפול ב-Risperdal (ריספרידל) עקב בעיות התנהגות. ההורים מסרבים. מהי הפעולה הנכונה?",
+          "right_answer": "לזמן את ההורים והילד לשיחה ולנסות להסיר התנגדות",
+          "false_one": "לתת למרות סירוב ההורים",
+          "false_two": "לזמן רק את ההורים לשיחה על חשיבות הטיפול",
+          "false_three": "לפנות לוועדת אתיקה מיד",
+          "category": "פסיכיאטריה",
+          "division": "מצבים כלליים",
+          "subdivision": "תקשורת טיפולית",
+          "level": "יישום",
+          "explanation": "🔁 שאלה משוחזרת: אפריל 2025 | ספטמבר 2025\n\n📚 התשובה מבוססת על דייוויס 10\n\nתשובה נכונה\nלזמן את ההורים והילד לשיחה ולנסות להסיר התנגדות: בקטין הסמכות לאשר טיפול נתונה להוריו או לאפוטרופוס שלו, ולכן אין לתת את התרופה כנגד סירובם. הפעולה הנכונה היא לזמן את ההורים יחד עם הילד לשיחה משותפת, לברר את מקור ההתנגדות ולנסות להסירה תוך שיתוף כל המעורבים. לפיכך זו הפעולה המתאימה ביותר.\n\nתשובות שגויות\nלתת למרות סירוב ההורים: מתן טיפול לקטין כנגד סירוב ההורים פוגע בסמכות ההסכמה שלהם.\n\nלזמן רק את ההורים לשיחה על חשיבות הטיפול: שיחה עם ההורים בלבד מדירה את הילד עצמו, שהוא המטופל, מהתהליך.\n\nלפנות לוועדת אתיקה מיד: פנייה לוועדת אתיקה היא צעד מוקדם מדי בטרם מוצו השיחה והניסיון להסיר את ההתנגדות.",
+          "question_order": [
+            "d",
+            "a",
+            "c",
+            "b"
+          ],
+          "question_selection": "a",
+          "status": "right",
+          "question_number": 5,
+          "question": {
+            "question_id": "58f67838-9ff4-42e2-8805-319706adf6b8",
+            "question_text": "ילד בן 14 קיבל הוראה לטיפול ב-Risperdal (ריספרידל) עקב בעיות התנהגות. ההורים מסרבים. מהי הפעולה הנכונה?",
+            "right_answer": "לזמן את ההורים והילד לשיחה ולנסות להסיר התנגדות",
+            "false_one": "לתת למרות סירוב ההורים",
+            "false_two": "לזמן רק את ההורים לשיחה על חשיבות הטיפול",
+            "false_three": "לפנות לוועדת אתיקה מיד",
+            "category": "פסיכיאטריה",
+            "division": "מצבים כלליים",
+            "subdivision": "תקשורת טיפולית",
+            "level": "יישום",
+            "time_modified": "2026-06-30T22:44:37.479Z",
+            "explanation": "🔁 שאלה משוחזרת: אפריל 2025 | ספטמבר 2025\n\n📚 התשובה מבוססת על דייוויס 10\n\nתשובה נכונה\nלזמן את ההורים והילד לשיחה ולנסות להסיר התנגדות: בקטין הסמכות לאשר טיפול נתונה להוריו או לאפוטרופוס שלו, ולכן אין לתת את התרופה כנגד סירובם. הפעולה הנכונה היא לזמן את ההורים יחד עם הילד לשיחה משותפת, לברר את מקור ההתנגדות ולנסות להסירה תוך שיתוף כל המעורבים. לפיכך זו הפעולה המתאימה ביותר.\n\nתשובות שגויות\nלתת למרות סירוב ההורים: מתן טיפול לקטין כנגד סירוב ההורים פוגע בסמכות ההסכמה שלהם.\n\nלזמן רק את ההורים לשיחה על חשיבות הטיפול: שיחה עם ההורים בלבד מדירה את הילד עצמו, שהוא המטופל, מהתהליך.\n\nלפנות לוועדת אתיקה מיד: פנייה לוועדת אתיקה היא צעד מוקדם מדי בטרם מוצו השיחה והניסיון להסיר את ההתנגדות.",
+            "is_restoration": true,
+            "restoration_cycle": "אפריל 2025"
+          },
+          "test_id": "7d42327e-4264-4bce-8a28-573283588808",
+          "user_id": "auth0|6a4010668444c31ffcd577c7",
+          "test_question_id": "449c2400-5b33-49cb-a037-40789d7c3a87",
+          "question_id": "58f67838-9ff4-42e2-8805-319706adf6b8",
+          "time_modified": "2026-06-30T22:44:37.479Z",
+          "is_restoration": true,
+          "restoration_cycle": "אפריל 2025",
+          "attachment": ""
+        }
+      }
+    },
+    {
+      "id": "19f21997b7275197",
+      "date": "2026-07-02T06:52:14Z",
+      "isUnread": false,
+      "classification": "other",
+      "body": {
+        "os_details": {
+          "name": "chrome",
+          "version": "149.0.0",
+          "os": "Windows 10",
+          "type": "browser"
+        },
+        "issue_text": "לא מופיעה השאלה, רק התשובות",
+        "user_details": {
+          "roleType": [
+            "Paid"
+          ],
+          "sub": "google-oauth2|107783790584389983630",
+          "userId": "google-oauth2|107783790584389983630"
+        },
+        "extra_details": {
+          "question_text": "",
+          "right_answer": "סרטן צוואר הרחם (Cervical Cancer)",
+          "false_one": "סרטן רירית הרחם (Endometrial Cancer)",
+          "false_two": "אנדומטריוזיס (Endometriosis)",
+          "false_three": "סרטן השחלות (Ovarian Cancer)",
+          "category": "סיעוד האישה",
+          "division": "מצבים כלליים",
+          "subdivision": "סיכון גנטי",
+          "level": "הבנה",
+          "explanation": "📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nסרטן צוואר הרחם (Cervical Cancer): סרטן צוואר הרחם נגרם כמעט תמיד מזיהום בנגיף הפפילומה האנושי, שעובר במגע מיני. תחילת פעילות מינית בגיל צעיר וריבוי בני זוג מגבירים את החשיפה לנגיף, ולכן הם גורמי סיכון מוכרים לסרטן צוואר הרחם. לכן ריבוי בני זוג מגיל צעיר מעלה את הסיכון לסרטן צוואר הרחם.\n\nתשובות שגויות\nסרטן רירית הרחם (Endometrial Cancer): קשור בעיקר לחשיפה ממושכת לאסטרוגן ולא למספר בני הזוג.\n\nאנדומטריוזיס (Endometriosis): אינו זיהום המועבר במגע מיני ואינו קשור למספר בני הזוג.\n\nסרטן השחלות (Ovarian Cancer): אינו קשור למספר בני הזוג או לזיהום מיני.",
+          "question_order": [
+            "d",
+            "a",
+            "b",
+            "c"
+          ],
+          "question_selection": "0",
+          "status": "notSubmited",
+          "question_number": 5,
+          "question": {
+            "question_id": "32aec123-c81d-4f18-ba40-3c73783ddac6",
+            "question_text": "",
+            "right_answer": "סרטן צוואר הרחם (Cervical Cancer)",
+            "false_one": "סרטן רירית הרחם (Endometrial Cancer)",
+            "false_two": "אנדומטריוזיס (Endometriosis)",
+            "false_three": "סרטן השחלות (Ovarian Cancer)",
+            "category": "סיעוד האישה",
+            "division": "מצבים כלליים",
+            "subdivision": "סיכון גנטי",
+            "level": "הבנה",
+            "time_modified": "2026-06-30T21:10:30.196Z",
+            "explanation": "📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nסרטן צוואר הרחם (Cervical Cancer): סרטן צוואר הרחם נגרם כמעט תמיד מזיהום בנגיף הפפילומה האנושי, שעובר במגע מיני. תחילת פעילות מינית בגיל צעיר וריבוי בני זוג מגבירים את החשיפה לנגיף, ולכן הם גורמי סיכון מוכרים לסרטן צוואר הרחם. לכן ריבוי בני זוג מגיל צעיר מעלה את הסיכון לסרטן צוואר הרחם.\n\nתשובות שגויות\nסרטן רירית הרחם (Endometrial Cancer): קשור בעיקר לחשיפה ממושכת לאסטרוגן ולא למספר בני הזוג.\n\nאנדומטריוזיס (Endometriosis): אינו זיהום המועבר במגע מיני ואינו קשור למספר בני הזוג.\n\nסרטן השחלות (Ovarian Cancer): אינו קשור למספר בני הזוג או לזיהום מיני.",
+            "is_restoration": false,
+            "restoration_cycle": null
+          },
+          "test_id": "8a54b7a9-bf0b-4eed-9188-eb9dab305312",
+          "user_id": "google-oauth2|107783790584389983630",
+          "test_question_id": "3bf2da52-2e47-40f8-8c4e-b956990a450b",
+          "question_id": "32aec123-c81d-4f18-ba40-3c73783ddac6",
+          "time_modified": "2026-06-30T21:10:30.196Z",
+          "is_restoration": false,
+          "restoration_cycle": null
+        }
+      }
+    },
     {
       "id": "19f182d3bff34f74",
       "date": "2026-06-30T10:57:24Z",
       "isUnread": false,
-      "classification": "phrasing",
+      "classification": "other",
       "body": {
         "os_details": {
           "name": "chrome",
