@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-07-11T06:12:15Z",
-  "total_count": 6,
-  "unread_count": 2,
+  "fetched_at": "2026-07-12T06:08:35Z",
+  "total_count": 5,
+  "unread_count": 1,
   "threads": [
     {
       "id": "19f479e6bce40781",
@@ -335,74 +335,6 @@
           "time_modified": "2026-07-05T22:51:30.454Z",
           "is_restoration": true,
           "restoration_cycle": "אפריל 2026",
-          "attachment": ""
-        }
-      }
-    },
-    {
-      "id": "19f41d4f84b5d7f3",
-      "date": "2026-07-08T13:05:03Z",
-      "isUnread": true,
-      "classification": "wrong",
-      "body": {
-        "os_details": {
-          "name": "chrome",
-          "version": "149.0.0",
-          "os": "Windows 10",
-          "type": "browser"
-        },
-        "issue_text": "נראה לי שזה IV (לא PR).",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|6a3d30cf571f1213e09359c6",
-          "userId": "auth0|6a3d30cf571f1213e09359c6"
-        },
-        "extra_details": {
-          "question_text": "איזו תרופה מהווה את הטיפול המועדף במתן רקטלי (PR) להפסקת התקף אפילפטי חריף?",
-          "right_answer": "ואבן (Diazepam)",
-          "false_one": "קפטופריל (Captopril)",
-          "false_two": "מורפין (Morphine)",
-          "false_three": "ניטרטים (Nitrates)",
-          "category": "סיעוד המבוגר",
-          "division": "נוירולוגיה",
-          "subdivision": "פרכוסים",
-          "level": "ידע",
-          "explanation": "🔁 שאלה משוחזרת: אפריל 2023\n📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nואבן (Diazepam): דיאזפאם הוא בנזודיאזפין המשמש להפסקת התקף אפילפטי חריף. מבין התרופות המוצעות, דיאזפאם הוא היחיד שהוא נוגד פרכוסים, ולכן הוא הטיפול המתאים להפסקת התקף חריף.\n\nתשובות שגויות\nקפטופריל (Captopril): מעכב ACE לטיפול בלחץ דם, אינו נוגד פרכוסים.\n\nמורפין (Morphine): משכך כאבים אופיואידי, אינו נוגד פרכוסים.\n\nניטרטים (Nitrates): מרחיבי כלי דם לטיפול בכאב חזה, אינם נוגדי פרכוסים.",
-          "question_order": [
-            "b",
-            "c",
-            "d",
-            "a"
-          ],
-          "question_selection": "a",
-          "status": "right",
-          "question_number": 10,
-          "question": {
-            "question_id": "d70a501b-a941-4eae-b932-1d042b8ef5f7",
-            "question_text": "איזו תרופה מהווה את הטיפול המועדף במתן רקטלי (PR) להפסקת התקף אפילפטי חריף?",
-            "right_answer": "ואבן (Diazepam)",
-            "false_one": "קפטופריל (Captopril)",
-            "false_two": "מורפין (Morphine)",
-            "false_three": "ניטרטים (Nitrates)",
-            "attachment": "",
-            "category": "סיעוד המבוגר",
-            "division": "נוירולוגיה",
-            "subdivision": "פרכוסים",
-            "level": "ידע",
-            "time_modified": "2026-07-05T23:22:48.327Z",
-            "explanation": "🔁 שאלה משוחזרת: אפריל 2023\n📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nואבן (Diazepam): דיאזפאם הוא בנזודיאזפין המשמש להפסקת התקף אפילפטי חריף. מבין התרופות המוצעות, דיאזפאם הוא היחיד שהוא נוגד פרכוסים, ולכן הוא הטיפול המתאים להפסקת התקף חריף.\n\nתשובות שגויות\nקפטופריל (Captopril): מעכב ACE לטיפול בלחץ דם, אינו נוגד פרכוסים.\n\nמורפין (Morphine): משכך כאבים אופיואידי, אינו נוגד פרכוסים.\n\nניטרטים (Nitrates): מרחיבי כלי דם לטיפול בכאב חזה, אינם נוגדי פרכוסים.",
-            "is_restoration": true,
-            "restoration_cycle": "אפריל 2023"
-          },
-          "test_id": "e07968c1-51fe-4e7a-bcf4-9911dd0b42f9",
-          "user_id": "auth0|6a3d30cf571f1213e09359c6",
-          "test_question_id": "94de27bc-caa0-4cfb-be9c-444abf74c848",
-          "question_id": "d70a501b-a941-4eae-b932-1d042b8ef5f7",
-          "time_modified": "2026-07-05T23:22:48.327Z",
-          "is_restoration": true,
-          "restoration_cycle": "אפריל 2023",
           "attachment": ""
         }
       }
