@@ -1,7 +1,7 @@
 {
-  "fetched_at": "2026-09-09T06:13:16Z",
-  "total_count": 5,
-  "unread_count": 5,
+  "fetched_at": "2026-09-10T06:12:22Z",
+  "total_count": 4,
+  "unread_count": 4,
   "threads": [
     {
       "id": "1a07d01639f7a208",
@@ -268,73 +268,6 @@
           "time_modified": "2026-07-22T12:30:24.333Z",
           "is_restoration": true,
           "restoration_cycle": "אפריל 2026",
-          "attachment": ""
-        }
-      }
-    },
-    {
-      "id": "1a07662e7136bf67",
-      "date": "2026-09-06T11:03:07Z",
-      "isUnread": true,
-      "classification": "explanation",
-      "body": {
-        "os_details": {
-          "name": "safari",
-          "version": "26.3.0",
-          "os": "Mac OS",
-          "type": "browser"
-        },
-        "issue_text": "אני לא מבינה את התשובה... כתוב שה- QRS לא סדיר ובתשובה מתואר QRS סדיר",
-        "user_details": {
-          "roleType": [
-            "Paid"
-          ],
-          "sub": "auth0|6a8c4784b0ed001378dd8c13",
-          "userId": "auth0|6a8c4784b0ed001378dd8c13"
-        },
-        "extra_details": {
-          "question_text": "ב-ECG נצפה QRS לא סדיר בעוד שאר הפרמטרים תקינים. מהו שם הקצב?",
-          "right_answer": "הפרעת קצב סינוס (Sinus Arrhythmia)",
-          "false_one": "פרפור פרוזדורים (Atrial Fibrillation)",
-          "false_two": "אקסטרסיסטולות (Premature Contractions)",
-          "false_three": "רפרפור פרוזדורים (Atrial Flutter)",
-          "category": "סיעוד המבוגר",
-          "division": "קרדיולוגיה",
-          "subdivision": "הפרעות קצב",
-          "level": "הבנה",
-          "explanation": "🔁 שאלה משוחזרת: ספטמבר 2025\n📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nהפרעת קצב סינוס (Sinus Arrhythmia): הקשר הסינוסי יוצר בה דחפים בקצב לא סדיר, כאשר הקצב עולה בדרך כלל בשאיפה ויורד בנשיפה. גל ה-P תקין ועקבי ותמיד לפני ה-QRS, מקטע ה-PR עקבי בין 0.12 ל-0.20 שניות, והיחס בין גלי P ל-QRS הוא אחד לאחד. לפיכך קצב לא סדיר עם שאר הפרמטרים תקינים מתאים להפרעת קצב סינוס.\n\nתשובות שגויות\nפרפור פרוזדורים (Atrial Fibrillation): מלווה בהיעדר גלי P מובחנים, בעוד שבשאלה שאר הפרמטרים תקינים, ולכן אינו מתאים.\n\nאקסטרסיסטולות (Premature Contractions): פעימות מוקדמות בודדות על רקע קצב סדיר, ולא דפוס בסיסי לא סדיר קבוע.\n\nרפרפור פרוזדורים (Atrial Flutter): מלווה בגלי F בצורת שיני מסור וקצב עלייתי מהיר, ולא בתמונה תקינה למעט אי סדירות.",
-          "question_order": [
-            "b",
-            "d",
-            "a",
-            "c"
-          ],
-          "question_selection": "c",
-          "status": "wrong",
-          "question_number": 38,
-          "question": {
-            "question_id": "51422df6-7c4e-4308-864c-c43a2e311b34",
-            "question_text": "ב-ECG נצפה QRS לא סדיר בעוד שאר הפרמטרים תקינים. מהו שם הקצב?",
-            "right_answer": "הפרעת קצב סינוס (Sinus Arrhythmia)",
-            "false_one": "פרפור פרוזדורים (Atrial Fibrillation)",
-            "false_two": "אקסטרסיסטולות (Premature Contractions)",
-            "false_three": "רפרפור פרוזדורים (Atrial Flutter)",
-            "category": "סיעוד המבוגר",
-            "division": "קרדיולוגיה",
-            "subdivision": "הפרעות קצב",
-            "level": "הבנה",
-            "time_modified": "2026-08-12T16:24:48.360Z",
-            "explanation": "🔁 שאלה משוחזרת: ספטמבר 2025\n📚 התשובה מבוססת על ברונר 15\n\nתשובה נכונה\nהפרעת קצב סינוס (Sinus Arrhythmia): הקשר הסינוסי יוצר בה דחפים בקצב לא סדיר, כאשר הקצב עולה בדרך כלל בשאיפה ויורד בנשיפה. גל ה-P תקין ועקבי ותמיד לפני ה-QRS, מקטע ה-PR עקבי בין 0.12 ל-0.20 שניות, והיחס בין גלי P ל-QRS הוא אחד לאחד. לפיכך קצב לא סדיר עם שאר הפרמטרים תקינים מתאים להפרעת קצב סינוס.\n\nתשובות שגויות\nפרפור פרוזדורים (Atrial Fibrillation): מלווה בהיעדר גלי P מובחנים, בעוד שבשאלה שאר הפרמטרים תקינים, ולכן אינו מתאים.\n\nאקסטרסיסטולות (Premature Contractions): פעימות מוקדמות בודדות על רקע קצב סדיר, ולא דפוס בסיסי לא סדיר קבוע.\n\nרפרפור פרוזדורים (Atrial Flutter): מלווה בגלי F בצורת שיני מסור וקצב עלייתי מהיר, ולא בתמונה תקינה למעט אי סדירות.",
-            "is_restoration": true,
-            "restoration_cycle": "ספטמבר 2025"
-          },
-          "test_id": "de57040a-0abd-4b40-8f40-c086c632ec68",
-          "user_id": "auth0|6a8c4784b0ed001378dd8c13",
-          "test_question_id": "a9b3fd46-e0ab-4e74-8ee9-e42758c32a23",
-          "question_id": "51422df6-7c4e-4308-864c-c43a2e311b34",
-          "time_modified": "2026-08-12T16:24:48.360Z",
-          "is_restoration": true,
-          "restoration_cycle": "ספטמבר 2025",
           "attachment": ""
         }
       }
